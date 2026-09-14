@@ -1,0 +1,70 @@
+/* Full-bleed: no Elementor/WP centering */
+body.theme-freshguard{margin:0;width:100%;max-width:none;background:#081910}
+.site,.site-content,#content,#page,#primary,.entry-content,
+.elementor,.elementor-section-wrap,.elementor-top-section,.e-con,.e-con>.e-con-inner,
+.elementor-container,.elementor-column-wrap,.elementor-widget-wrap{
+  max-width:100%!important;width:100%!important;margin-left:0!important;margin-right:0!important}
+.elementor-section.elementor-section-boxed>.elementor-container,.e-con.e-con-boxed{max-width:100%!important}
+.elementor-section,.e-con.e-parent{padding-left:0!important;padding-right:0!important;margin:0!important}
+.elementor-widget-freshguard_landing,.elementor-widget-freshguard_section,
+.elementor-widget-fg_hero,.elementor-widget-fg_welcome,.elementor-widget-fg_services,
+.elementor-widget-fg_europe,.elementor-widget-fg_assess,.elementor-widget-fg_partners,
+.elementor-widget-fg_contact,.elementor-widget-fg_articles,
+.elementor-widget-freshguard_landing>.elementor-widget-container,
+.elementor-widget-freshguard_section>.elementor-widget-container,
+.elementor-widget-fg_hero>.elementor-widget-container,
+.elementor-widget-fg_welcome>.elementor-widget-container,
+.elementor-widget-fg_services>.elementor-widget-container,
+.elementor-widget-fg_europe>.elementor-widget-container,
+.elementor-widget-fg_assess>.elementor-widget-container,
+.elementor-widget-fg_partners>.elementor-widget-container,
+.elementor-widget-fg_contact>.elementor-widget-container,
+.elementor-widget-fg_articles>.elementor-widget-container,
+.fg-el-wrap{max-width:none!important;width:100%!important;margin:0!important;padding:0!important}
+/* Reset WP page article only — NOT .svc / .art / europe note cards */
+.elementor-page .hentry,
+.elementor-page article.post,
+.elementor-page article.page,
+.elementor-page > article,
+#content > article,
+#primary > article{margin:0;padding:0;border:0;background:transparent;max-width:none;width:100%}
+.elementor-page .entry-header,.elementor-page .entry-footer,.elementor-page .page-header,
+.elementor-page .post-thumbnail,.elementor-page .entry-title{display:none!important}
+:root{--container-max-width:100%!important}
+
+/* Lock service cards to index.html look (beat Elementor resets) */
+.fg-el-wrap .svc,
+.services .svc,
+section.services article.svc{
+  background:rgba(255,255,255,.05)!important;
+  border:1px solid rgba(255,255,255,.12)!important;
+  border-radius:22px!important;
+  overflow:hidden!important;
+  padding:0 0 24px!important;
+  margin:0!important;
+  max-width:none!important;
+  width:auto!important;
+  box-sizing:border-box!important;
+}
+.fg-el-wrap .svc img,
+.services .svc img{
+  width:100%!important;
+  height:190px!important;
+  object-fit:cover!important;
+  display:block!important;
+  border-radius:0!important;
+  margin:0!important;
+}
+.fg-el-wrap .svc .pad,
+.services .svc .pad{padding:18px 18px 0!important}
+.fg-el-wrap .svc .n,
+.services .svc .n{color:var(--leaf)!important;font-size:12px!important;font-weight:800!important;letter-spacing:.14em!important}
+.fg-el-wrap .svc h3,
+.services .svc h3{color:#fff!important;font-size:20px!important;margin:8px 0 10px!important}
+.fg-el-wrap .svc p,
+.services .svc p{color:#b7cbbf!important;font-size:14px!important}
+
+@media (max-width:980px){
+  .fg-el-wrap .svc img,
+  .services .svc img{height:160px!important}
+}

@@ -1,0 +1,101 @@
+/* FreshGuard motion — GPU-only (opacity + transform). Mirrors index.html */
+:root {
+  --fx-ease: cubic-bezier(.22, 1, .36, 1);
+  --fx-dur: .6s;
+}
+.fx {
+  opacity: 0;
+  transform: translate3d(0, 20px, 0);
+  transition: opacity var(--fx-dur) var(--fx-ease), transform var(--fx-dur) var(--fx-ease);
+  transition-delay: calc(var(--d, 0) * 50ms);
+}
+.fx.fx-left { transform: translate3d(-28px, 0, 0); }
+.fx.fx-right { transform: translate3d(28px, 0, 0); }
+.fx.fx-scale { transform: translate3d(0, 12px, 0) scale(.97); }
+.fx.fx-fade { transform: none; }
+.fx.fx-up { transform: translate3d(0, 22px, 0); }
+.fx.in {
+  opacity: 1;
+  transform: none;
+}
+header {
+  transform: translate3d(0, -100%, 0);
+  transition: transform .7s var(--fx-ease), box-shadow .3s ease, background .3s ease;
+}
+body.is-loaded header { transform: none; }
+.hero-bg {
+  transform: scale(1.06);
+  transition: transform 1.4s var(--fx-ease), opacity .8s ease;
+  opacity: .85;
+}
+body.is-loaded .hero-bg {
+  transform: scale(1);
+  opacity: 1;
+}
+.btn {
+  transition: transform .25s var(--fx-ease), filter .25s ease, background .25s ease, color .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn:active { transform: translateY(0); }
+.chip, .places span, .art-list a {
+  transition: transform .25s var(--fx-ease), background .25s ease, border-color .25s ease, color .25s ease;
+}
+.chip:hover, .places span:hover { transform: translateY(-2px); }
+.svc, .art, .split-notes article, .partner-grid > div {
+  transition: transform .4s var(--fx-ease), border-color .35s ease, background .35s ease, box-shadow .4s ease;
+}
+.svc:hover, .art:hover, .split-notes article:hover, .partner-grid > div:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,.18);
+}
+.svc img, .art img, .welcome-visual img {
+  transition: transform .7s var(--fx-ease);
+}
+.svc:hover img, .art:hover img { transform: scale(1.04); }
+header nav a, .head-right .phone, .brand {
+  transition: color .25s ease, opacity .25s ease, transform .25s ease;
+}
+header nav a:hover { color: var(--leaf); transform: translateY(-1px); }
+.leaf {
+  animation: fgLeafFloat 9s ease-in-out infinite alternate;
+  animation-delay: calc(var(--leaf-i, 0) * -.7s);
+}
+.leaf-a { --leaf-i: 0; }
+.leaf-b { --leaf-i: 1; }
+.leaf-c { --leaf-i: 2; }
+.leaf-d { --leaf-i: 3; }
+.leaf-e { --leaf-i: 4; }
+.leaf-f { --leaf-i: 5; }
+.leaf-g { --leaf-i: 6; }
+.leaf-h { --leaf-i: 7; }
+.leaf-i { --leaf-i: 8; }
+@keyframes fgLeafFloat {
+  from { translate: 0 0; }
+  to { translate: 0 -14px; }
+}
+input, textarea, select, .upload {
+  transition: border-color .25s ease, box-shadow .25s ease, transform .25s ease;
+}
+input:focus, textarea:focus, select:focus {
+  transform: translateY(-1px);
+}
+/* Elementor editor: never hide content */
+.elementor-editor-active .fx,
+.elementor-edit-area .fx {
+  opacity: 1 !important;
+  transform: none !important;
+}
+.elementor-editor-active header,
+.elementor-edit-area header {
+  transform: none !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .fx, header, .hero-bg { opacity: 1 !important; transform: none !important; translate: none !important; }
+  .leaf { animation: none !important; }
+}
