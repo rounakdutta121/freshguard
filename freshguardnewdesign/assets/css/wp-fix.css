@@ -131,6 +131,18 @@ html body.theme-freshguard-new .stat strong {
   font-weight: 700 !important;
 }
 
+html body.theme-freshguard-new .about::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: rgba(255, 255, 255, 0.42) !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+}
+html body.theme-freshguard-new .about-copy {
+  filter: none !important;
+}
+
 .site,
 .site-content,
 #content,
@@ -456,6 +468,21 @@ html body.theme-freshguard-new article.art img {
   html body.theme-freshguard-new .logo img {
     height: 40px !important;
     max-height: 40px !important;
+  }
+  html body.theme-freshguard-new .tags {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px !important;
+    width: 100% !important;
+  }
+  html body.theme-freshguard-new .tag,
+  html body.theme-freshguard-new .hero .tag {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
   }
   html body.theme-freshguard-new .service-grid,
   html body.theme-freshguard-new .art-grid,
