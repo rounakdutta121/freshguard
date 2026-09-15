@@ -13,15 +13,15 @@
       --ink: #021619;
       --deep: #062d36;
       --panel: #0a3d4a;
-      --aqua: #1fd6c2;
-      --aqua-strong: #14a899;
-      --aqua-soft: #5aefdf;
-      --fog: #f4fbfa;
+      --aqua: #8fc640;
+      --aqua-strong: #6b9428;
+      --aqua-soft: #8fc640;
+      --fog: #f6faf1;
       --white: #ffffff;
-      --muted: #5a7370;
+      --muted: #5a6b52;
       --line: rgba(2, 22, 25, 0.1);
       --line-strong: rgba(2, 22, 25, 0.16);
-      --soft: rgba(31, 214, 194, 0.12);
+      --soft: rgba(143, 198, 64, 0.12);
       --radius: 18px;
       --pad: clamp(20px, 4vw, 48px);
       --max: 1120px;
@@ -168,8 +168,8 @@
       content: "";
       position: absolute; inset: 0;
       background:
-        linear-gradient(180deg, rgba(2,22,25,.28) 0%, rgba(2,22,25,.12) 38%, rgba(2,22,25,.78) 100%),
-        radial-gradient(ellipse at 80% 30%, rgba(31,214,194,.18), transparent 45%);
+        linear-gradient(90deg, rgba(2,22,25,.38) 0%, rgba(2,22,25,.22) 34%, rgba(2,22,25,.08) 58%, transparent 100%),
+        linear-gradient(180deg, rgba(2,22,25,.16) 0%, rgba(2,22,25,.06) 36%, rgba(2,22,25,.42) 100%);
     }
     .hero-inner {
       position: relative; z-index: 1;
@@ -185,21 +185,27 @@
       font-weight: 700;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: var(--aqua);
+      color: #d7f08a;
       margin-bottom: 18px;
+      text-shadow: 0 2px 16px rgba(0,0,0,.55), 0 1px 2px rgba(0,0,0,.7);
     }
     .hero h1 {
       color: #fff;
       font-size: clamp(40px, 6.5vw, 72px);
       max-width: 12ch;
       margin-bottom: 18px;
+      text-shadow: 0 2px 22px rgba(0,0,0,.5), 0 1px 3px rgba(0,0,0,.65);
     }
-    .hero h1 span { color: var(--aqua-soft); }
+    .hero h1 span {
+      color: #d7f08a;
+      text-shadow: 0 2px 20px rgba(0,0,0,.55), 0 1px 3px rgba(0,0,0,.7);
+    }
     .hero p {
-      color: rgba(255,255,255,.82);
+      color: rgba(255,255,255,.96);
       font-size: clamp(16px, 1.5vw, 18px);
       max-width: 44ch;
       margin-bottom: 28px;
+      text-shadow: 0 1px 14px rgba(0,0,0,.5), 0 1px 2px rgba(0,0,0,.45);
     }
     .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 28px; }
     .tags { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -264,14 +270,7 @@
     .about {
       position: relative;
       overflow: hidden;
-      background: url("assets/fg2-welcome-bg.jpg") center/cover no-repeat;
-    }
-    .about::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(90deg, rgba(2,22,25,.62) 0%, rgba(2,22,25,.45) 48%, rgba(2,22,25,.38) 100%);
-      pointer-events: none;
+      background: url("assets/fg2-welcome-bg.jpg") 72% center / cover no-repeat;
     }
     .about-grid {
       position: relative;
@@ -296,24 +295,33 @@
       box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
     }
     .about-media img { width: 100%; height: 100%; object-fit: cover; }
+    .about-copy {
+      filter:
+        drop-shadow(0 0 1px #fff)
+        drop-shadow(0 0 6px #fff)
+        drop-shadow(0 0 16px #fff)
+        drop-shadow(0 0 28px rgba(255,255,255,.95));
+    }
     .about-copy h2 {
       font-size: clamp(32px, 4vw, 44px);
       margin-bottom: 16px;
-      color: #fff;
+      color: #10160c;
     }
     .about-copy h2 em {
       font-style: normal;
-      color: var(--aqua-soft);
+      color: #5a8a1e;
     }
     .about-copy p {
       margin-bottom: 14px;
-      color: rgba(255,255,255,.82);
+      color: #10160c;
+      font-weight: 600;
     }
     .about-copy p strong {
-      color: #fff;
+      color: #10160c;
+      font-weight: 700;
     }
     .about-copy .label {
-      color: var(--aqua-soft);
+      color: #4e7a18;
     }
 
     /* SERVICES — clean 2x2 */
@@ -336,9 +344,13 @@
     }
     .service img {
       width: 100%;
-      height: 220px;
+      height: 280px;
       object-fit: cover;
+      object-position: center 45%;
     }
+    .service img[src*="fog"] { object-position: 70% 62%; }
+    .service img[src*="thermal"] { object-position: 55% 50%; }
+    .service img[src*="vent"] { object-position: 40% 40%; }
     .service-body { padding: 22px 22px 26px; }
     .service-body .n {
       font-size: 13px;
@@ -475,7 +487,7 @@
       min-height: 460px;
       background: var(--deep);
     }
-    .assess-media img { width: 100%; height: 100%; object-fit: cover; min-height: 460px; }
+    .assess-media img { width: 100%; height: 100%; object-fit: cover; min-height: 460px; object-position: 38% 58%; }
     .assess-copy h2 { font-size: clamp(32px, 4vw, 44px); margin: 0 0 16px; }
     .assess-copy p { margin-bottom: 14px; }
 
@@ -611,7 +623,7 @@
       transform: translateY(-4px);
       box-shadow: 0 16px 36px rgba(2,22,25,.08);
     }
-    .art img { width: 100%; height: 190px; object-fit: cover; }
+    .art img { width: 100%; height: 210px; object-fit: cover; object-position: center 40%; }
     .art .t { padding: 18px; }
     .art .n { font-size: 12px; font-weight: 700; color: var(--aqua-strong); margin-bottom: 8px; }
     .art h3 { font-size: 18px; line-height: 1.25; }
@@ -635,7 +647,7 @@
     /* FOOTER */
     footer {
       background: var(--ink);
-      color: rgba(255,255,255,.7);
+      color: rgba(255,255,255,.78);
       padding: 40px 0 28px;
     }
     .foot-top {
@@ -648,6 +660,9 @@
       display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
       padding-top: 18px; border-top: 1px solid rgba(255,255,255,.1);
       font-size: 13px;
+      font-weight: 500;
+      color: rgba(255,255,255,.92);
+      padding-right: 76px;
     }
 
     /* ── Ambient flyers (leaves only) ── */
@@ -670,7 +685,7 @@
       height: 56px;
       color: var(--aqua);
       opacity: 0.55;
-      filter: drop-shadow(0 6px 14px rgba(31,214,194,.35));
+      filter: drop-shadow(0 6px 14px rgba(143,198,64,.35));
     }
     .flyer-leaf svg { width: 100%; height: 100%; display: block; }
 
@@ -986,7 +1001,7 @@
         margin-right: auto;
         width: min(var(--wide), calc(100% - var(--pad) * 2));
       }
-      .service img { height: 200px; }
+      .service img { height: 240px; }
       .assess-media, .assess-media img { min-height: 380px; }
     }
 
@@ -1022,6 +1037,10 @@
       .europe-inner,
       .partner-grid { grid-template-columns: 1fr; gap: 24px; }
 
+      .about {
+        background-position: 72% center;
+      }
+
       .about-media {
         aspect-ratio: 16 / 10;
         max-height: 360px;
@@ -1033,7 +1052,7 @@
       .contact h2 { max-width: none; }
 
       .service-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
-      .service img { height: 170px; }
+      .service img { height: 210px; }
       .service-body { padding: 16px 16px 20px; }
       .service-body h3 { font-size: 18px; max-width: none; }
 
@@ -1071,8 +1090,8 @@
       }
       .hero::after {
         background:
-          linear-gradient(180deg, rgba(2,22,25,.55) 0%, rgba(2,22,25,.42) 35%, rgba(2,22,25,.88) 100%),
-          radial-gradient(ellipse at 70% 25%, rgba(31,214,194,.12), transparent 50%);
+          linear-gradient(90deg, rgba(2,22,25,.44) 0%, rgba(2,22,25,.26) 48%, rgba(2,22,25,.1) 100%),
+          linear-gradient(180deg, rgba(2,22,25,.22) 0%, rgba(2,22,25,.1) 34%, rgba(2,22,25,.5) 100%);
       }
       .hero h1 { font-size: clamp(32px, 9vw, 42px); }
       .hero p { font-size: 15px; margin-bottom: 22px; }
@@ -1103,7 +1122,7 @@
       .art-grid,
       .partner-grid { grid-template-columns: 1fr; }
 
-      .service img { height: 200px; }
+      .service img { height: 240px; }
       .about-media { max-height: 280px; aspect-ratio: 4 / 3; }
       .assess-media, .assess-media img { min-height: 220px; }
 
@@ -1129,7 +1148,8 @@
 
       .foot-top { flex-direction: column; align-items: flex-start; gap: 16px; }
       .foot-links { gap: 12px; }
-      .foot-bottom { flex-direction: column; gap: 8px; }
+      .foot-bottom { flex-direction: column; gap: 8px; padding-right: 0; }
+      footer { padding-bottom: 108px; }
     }
 
     /* ── Small phones (≤400px) ── */
@@ -1162,12 +1182,12 @@
         height: 100%;
         object-fit: cover;
       }
-      .service img { height: 170px; }
+      .service img { height: 210px; }
       .art img { height: 160px; }
     }
 
     @media (max-width: 700px) {
-      .service img { height: 200px; }
+      .service img { height: 240px; }
       .art img { height: 180px; }
     }
   </style>
@@ -1191,7 +1211,7 @@
   <header class="nav">
     <div class="nav-row">
       <a class="logo" href="#home" aria-label="FreshGuard">
-        <img src="https://backend.freshguard.nl/assets/ad051085-a0b8-416a-af8d-76220dfc087b" alt="FreshGuard" width="150" height="40" />
+        <img src="assets/freshguard-logo.svg" alt="FreshGuard" width="150" height="40" />
       </a>
       <nav class="nav-links">
         <a href="#home">Home</a>
@@ -1270,7 +1290,7 @@
       </div>
       <div class="service-grid">
         <article class="service fx">
-          <img src="assets/fg2-service-thermal.jpg" alt="Thermal imaging camera" />
+          <img src="assets/fg2-service-thermal.jpg" alt="Thermal camera revealing a hidden leak and water-stained wall" />
           <div class="service-body">
             <div class="n">01</div>
             <h3>Leak Detection & Moisture Assessment</h3>
@@ -1278,7 +1298,7 @@
           </div>
         </article>
         <article class="service fx" style="--d:1">
-          <img src="assets/fg2-service-fog.jpg" alt="Sanitization fogging" />
+          <img src="assets/fg2-service-fog.jpg" alt="Sanitizing fog treatment in a grimy bathroom" />
           <div class="service-body">
             <div class="n">02</div>
             <h3>Odor Control, Sanitization & Disinfection</h3>
@@ -1286,7 +1306,7 @@
           </div>
         </article>
         <article class="service fx" style="--d:2">
-          <img src="assets/fg2-service-mold.jpg" alt="Mold remediation context" />
+          <img src="assets/fg2-service-mold.jpg" alt="Visible mold growth on a bathroom wall and ceiling" />
           <div class="service-body">
             <div class="n">03</div>
             <h3>Mold Removal & Prevention</h3>
@@ -1294,7 +1314,7 @@
           </div>
         </article>
         <article class="service fx" style="--d:3">
-          <img src="assets/fg2-service-vent.jpg" alt="Ventilation unit" />
+          <img src="assets/fg2-service-vent.jpg" alt="Window condensation and humidity with a ventilation unit" />
           <div class="service-body">
             <div class="n">04</div>
             <h3>Ventilation & Humidity Control</h3>
@@ -1343,7 +1363,7 @@
         <p class="fx" style="--d:4">When leak detection expertise is required, we work in close partnership with <strong>BA-MAH Totaaltechniek</strong>, specialists in non-destructive leak detection, ensuring fast and accurate identification of both visible and hidden leaks without unnecessary damage.</p>
       </div>
       <div class="assess-media fx" style="--d:2">
-        <img src="assets/fg2-assess.jpg" alt="Moisture inspection tools" />
+        <img src="assets/fg2-assess.jpg" alt="Thermal camera and moisture meter inspecting a water-stained wall" />
       </div>
     </div>
   </section>
@@ -1420,21 +1440,21 @@
       </div>
       <div class="art-grid">
         <article class="art fx">
-          <img src="assets/fg2-article-moisture.jpg" alt="" />
+          <img src="assets/fg2-article-moisture.jpg" alt="Water-stained ceiling and wall showing moisture damage in a home" />
           <div class="t">
             <div class="n">01</div>
             <h3>How Moisture Affects Your Home: A Hidden Threat to Health and Property</h3>
           </div>
         </article>
         <article class="art fx" style="--d:1">
-          <img src="assets/fg2-article-mold.jpg" alt="" />
+          <img src="assets/fg2-article-mold.jpg" alt="Close-up of household mold growing on a damp interior wall" />
           <div class="t">
             <div class="n">02</div>
             <h3>Everything You Wanted to Know About Mold, Even If You Were Hesitant to Ask</h3>
           </div>
         </article>
         <article class="art fx" style="--d:2">
-          <img src="assets/fg2-article-vent.jpg" alt="" />
+          <img src="assets/fg2-article-vent.jpg" alt="Window condensation and mold beside a wall ventilation grille" />
           <div class="t">
             <div class="n">03</div>
             <h3>The Role of Proper Ventilation in Preventing Mold</h3>
@@ -1449,7 +1469,7 @@
     <div class="shell">
       <div class="foot-top">
         <a class="logo" href="#home" aria-label="FreshGuard">
-          <img src="https://backend.freshguard.nl/assets/ad051085-a0b8-416a-af8d-76220dfc087b" alt="FreshGuard" width="130" height="36" />
+          <img src="assets/freshguard-logo.svg" alt="FreshGuard" width="130" height="36" />
         </a>
         <div class="foot-links">
           <a href="#home">Home</a>
@@ -1612,7 +1632,6 @@
 
         /* Footer */
         stagger(document.querySelector('.foot-top'), ':scope > *', 'fx-up', 0);
-        stagger(document.querySelector('.foot-bottom'), ':scope > *', 'fx-fade', 1);
         stagger(document.querySelector('.foot-links'), 'a', 'fx-pop', 1);
 
         if (reduce) {
@@ -1629,7 +1648,7 @@
             entry.target.classList.add('in');
             io.unobserve(entry.target);
           });
-        }, { threshold: 0.1, rootMargin: '0px 0px -6% 0px' });
+        }, { threshold: 0.08, rootMargin: '0px 0px 12% 0px' });
 
         document.querySelectorAll('.fx').forEach(function (el) {
           if (el.getBoundingClientRect().top < innerHeight * 0.92) el.classList.add('in');
