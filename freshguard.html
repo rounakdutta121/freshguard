@@ -1014,9 +1014,13 @@
       .menu { display: inline-flex; align-items: center; justify-content: center; }
       .btn { min-height: 44px; padding: 0 16px; font-size: 13px; }
 
-      .hero { min-height: 100svh; align-items: flex-end; }
+      .hero {
+        min-height: 100svh;
+        align-items: center;
+        padding-top: var(--nav);
+      }
       .hero-inner {
-        padding: calc(var(--nav) + 36px) 0 48px;
+        padding: 24px 0 32px;
         max-width: none;
       }
       .hero h1 { font-size: clamp(36px, 8vw, 56px); max-width: 14ch; }
@@ -1082,7 +1086,7 @@
       .nav-right .btn { padding: 0 14px; font-size: 12px; min-height: 40px; }
       .menu { width: 40px; height: 40px; }
 
-      .hero-inner { padding: calc(var(--nav) + 28px) 0 36px; }
+      .hero-inner { padding: 16px 0 24px; }
       .hero-bg-pc { display: none; }
       .hero-bg-mobile {
         display: block;
