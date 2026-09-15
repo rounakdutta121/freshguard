@@ -85,8 +85,8 @@
       align-items: center;
       gap: 16px;
     }
-    .logo { justify-self: start; z-index: 1; }
-    .logo img { height: 34px; width: auto; }
+    .logo { justify-self: start; z-index: 1; display: flex; align-items: center; }
+    .logo img { display: block; height: 46px; width: auto; max-height: 46px; }
     .nav-links {
       display: flex;
       justify-content: center;
@@ -1083,7 +1083,7 @@
     /* ── Mobile (≤700px) ── */
     @media (max-width: 700px) {
       :root { --pad: 16px; --nav: 60px; }
-      .logo img { height: 28px; }
+      .logo img { height: 40px; max-height: 40px; }
       .nav-right .btn { padding: 0 14px; font-size: 12px; min-height: 40px; }
       .menu { width: 40px; height: 40px; }
 
@@ -1216,7 +1216,7 @@
   <header class="nav">
     <div class="nav-row">
       <a class="logo" href="#home" aria-label="FreshGuard">
-        <img src="assets/freshguard-logo.svg" alt="FreshGuard" width="150" height="40" />
+        <img src="assets/freshguard-logo.svg" alt="FreshGuard" width="168" height="46" />
       </a>
       <nav class="nav-links">
         <a href="#home">Home</a>
