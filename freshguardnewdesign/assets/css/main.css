@@ -1117,6 +1117,10 @@
       .menu { width: 40px; height: 40px; }
 
       .hero-inner { padding: 16px 0 24px; }
+      .hero {
+        height: 89vh;
+        min-height: 89vh;
+      }
       .hero-bg-pc { display: none; }
       .hero-bg-mobile {
         display: block;

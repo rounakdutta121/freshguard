@@ -478,6 +478,11 @@ html body.theme-freshguard-new article.art img {
 
 /* ── Mobile ── */
 @media (max-width: 700px) {
+  html body.theme-freshguard-new .hero,
+  html body.theme-freshguard-new section.hero {
+    height: 89vh !important;
+    min-height: 89vh !important;
+  }
   html body.theme-freshguard-new .logo img {
     height: 40px !important;
     max-height: 40px !important;
