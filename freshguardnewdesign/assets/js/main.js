@@ -41,6 +41,7 @@
         });
         box.dataset.filled = '1';
       }
+      if (window.fgnI18n) window.fgnI18n.refresh();
 
       var photos = document.getElementById('photos');
       var fileList = document.getElementById('fileList');

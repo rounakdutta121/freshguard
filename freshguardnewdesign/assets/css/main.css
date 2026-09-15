@@ -759,6 +759,7 @@
       animation: fabLeafBounce 2.4s ease-in-out infinite;
     }
     .fab-wa { animation-delay: 0s; }
+    .fab-lang { animation-delay: .18s; }
     .fab-top.is-visible { animation-delay: .35s; }
     @keyframes fabLeafBounce {
       0%, 100% { transform: translateY(0) rotate(-4deg); }
@@ -780,6 +781,16 @@
       color: #fff;
     }
     .fab-wa:hover { background: #1ebe57; }
+    .fab-lang {
+      background: var(--ink);
+      color: #fff;
+      font-family: var(--display);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+    }
+    .fab-lang:hover { background: var(--deep); color: #fff; }
+    .fab-lang-code { line-height: 1; }
     .fab-top {
       background: var(--aqua);
       color: var(--ink);

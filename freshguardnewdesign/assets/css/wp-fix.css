@@ -130,6 +130,18 @@ html body.theme-freshguard-new .stat strong {
   display: block !important;
   font-weight: 700 !important;
 }
+html body.theme-freshguard-new .fab-lang {
+  background: #021619 !important;
+  color: #fff !important;
+  font-family: Outfit, Figtree, system-ui, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.06em !important;
+}
+html body.theme-freshguard-new .fab-lang:hover {
+  background: #062d36 !important;
+  color: #fff !important;
+}
 
 html body.theme-freshguard-new .about::before {
   content: "" !important;

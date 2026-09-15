@@ -14,7 +14,8 @@ add_action(
 		);
 		wp_enqueue_style( 'fgn-main', FGN_URI . '/assets/css/main.css', array( 'fgn-fonts' ), FGN_VERSION );
 		wp_enqueue_style( 'fgn-style', get_stylesheet_uri(), array( 'fgn-main' ), FGN_VERSION );
-		wp_enqueue_script( 'fgn-main', FGN_URI . '/assets/js/main.js', array(), FGN_VERSION, true );
+		wp_enqueue_script( 'fgn-i18n', FGN_URI . '/assets/js/i18n.js', array(), FGN_VERSION, true );
+		wp_enqueue_script( 'fgn-main', FGN_URI . '/assets/js/main.js', array( 'fgn-i18n' ), FGN_VERSION, true );
 	}
 );
 
