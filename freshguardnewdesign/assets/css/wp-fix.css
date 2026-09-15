@@ -111,6 +111,7 @@ html body.theme-freshguard-new .elementor .tag {
   background: #8fc640 !important;
   color: #021619 !important;
   border: 1px solid rgba(2, 22, 25, 0.08) !important;
+  text-decoration: none !important;
 }
 
 html body.theme-freshguard-new .tag:hover,
@@ -147,7 +148,7 @@ html body.theme-freshguard-new .about::before {
   content: "" !important;
   position: absolute !important;
   inset: 0 !important;
-  background: rgba(255, 255, 255, 0.42) !important;
+  background: rgba(255, 255, 255, 0.62) !important;
   pointer-events: none !important;
   z-index: 0 !important;
 }
@@ -495,6 +496,9 @@ html body.theme-freshguard-new article.art img {
     align-items: center !important;
     justify-content: center !important;
     text-align: center !important;
+  }
+  html body.theme-freshguard-new .hero h1 {
+    font-size: clamp(40px, 11.5vw, 52px) !important;
   }
   html body.theme-freshguard-new .service-grid,
   html body.theme-freshguard-new .art-grid,

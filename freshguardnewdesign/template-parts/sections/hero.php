@@ -15,10 +15,10 @@ if ( ! defined( 'ABSPATH' ) ) {
         <a class="btn btn-ghost" href="#services">Learn More</a>
       </div>
       <div class="tags fx" style="--d:4">
-        <span class="tag">Mold remediation</span>
-        <span class="tag">Moisture assessment</span>
-        <span class="tag">Biocidal sanitization</span>
-        <span class="tag">Ventilation</span>
+        <a class="tag" href="#contact">Mold remediation</a>
+        <a class="tag" href="#contact">Moisture assessment</a>
+        <a class="tag" href="#contact">Biocidal sanitization</a>
+        <a class="tag" href="#contact">Ventilation</a>
       </div>
     </div>
   </section>

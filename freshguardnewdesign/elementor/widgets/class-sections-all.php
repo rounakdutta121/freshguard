@@ -123,7 +123,7 @@ class Widget_Hero extends Fgn_Base_Widget {
 				</div>
 				<div class="tags fx" style="--d:4">
 					<?php foreach ( (array) $s['tags'] as $tag ) : ?>
-						<span class="tag"><?php echo esc_html( $tag['label'] ); ?></span>
+						<a class="tag" href="#contact"><?php echo esc_html( $tag['label'] ); ?></a>
 					<?php endforeach; ?>
 				</div>
 			</div>
