@@ -65,18 +65,6 @@
 
       /* Live scroll nav + back to top */
       var backTop = document.getElementById('backTop');
-      var moldGrow = document.querySelector('.mold-grow');
-      var moldRaf = 0;
-      var reduceMold = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      function setMoldProgress() {
-        moldRaf = 0;
-        if (!moldGrow || reduceMold || isEditing()) return;
-        var max = document.documentElement.scrollHeight - window.innerHeight;
-        var p = max > 0 ? window.scrollY / max : 0;
-        if (p < 0) p = 0;
-        if (p > 1) p = 1;
-        document.documentElement.style.setProperty('--mold', p.toFixed(4));
-      }
       function onScroll() {
         if (nav) {
           if (window.scrollY > 20) nav.classList.add('is-scrolled');
@@ -85,9 +73,6 @@
         if (backTop) {
           if (window.scrollY > 280) backTop.classList.add('is-visible');
           else backTop.classList.remove('is-visible');
-        }
-        if (moldGrow && !reduceMold && !moldRaf) {
-          moldRaf = requestAnimationFrame(setMoldProgress);
         }
       }
       window.addEventListener('scroll', onScroll, { passive: true });

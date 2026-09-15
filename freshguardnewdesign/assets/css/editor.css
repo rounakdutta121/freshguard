@@ -8,10 +8,6 @@
   visibility: visible !important;
 }
 
-.mold-grow {
-  display: none !important;
-}
-
 .hero-bg,
 .europe-bg {
   z-index: 0 !important;
