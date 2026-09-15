@@ -1,0 +1,533 @@
+/* WordPress / Elementor compatibility — match freshguard.html without breaking mobile. */
+
+html.theme-freshguard-new,
+html body.theme-freshguard-new,
+body.theme-freshguard-new {
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+html body.theme-freshguard-new *,
+html body.theme-freshguard-new *::before,
+html body.theme-freshguard-new *::after {
+  box-sizing: border-box;
+}
+
+html body.theme-freshguard-new img,
+html body.theme-freshguard-new svg,
+html body.theme-freshguard-new video {
+  max-width: 100% !important;
+}
+
+/* Section backgrounds must fill the whole block (WP sets img { height: auto }) */
+html body.theme-freshguard-new .hero,
+html body.theme-freshguard-new section.hero,
+html body.theme-freshguard-new .europe,
+html body.theme-freshguard-new section.europe {
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+html body.theme-freshguard-new .hero,
+html body.theme-freshguard-new section.hero {
+  min-height: 100svh !important;
+  min-height: 100dvh !important;
+}
+
+html body.theme-freshguard-new img.hero-bg,
+html body.theme-freshguard-new img.europe-bg,
+html body.theme-freshguard-new .hero .hero-bg,
+html body.theme-freshguard-new .europe .europe-bg,
+html body.theme-freshguard-new .elementor img.hero-bg,
+html body.theme-freshguard-new .elementor img.europe-bg {
+  position: absolute !important;
+  inset: 0 !important;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  transform: none !important;
+  opacity: 1 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+}
+
+html body.theme-freshguard-new img.hero-bg-pc,
+html body.theme-freshguard-new .hero .hero-bg-pc {
+  display: block !important;
+}
+
+html body.theme-freshguard-new img.hero-bg-mobile,
+html body.theme-freshguard-new .hero .hero-bg-mobile {
+  display: none !important;
+}
+
+@media (max-width: 700px) {
+  html body.theme-freshguard-new img.hero-bg-pc,
+  html body.theme-freshguard-new .hero .hero-bg-pc {
+    display: none !important;
+  }
+  html body.theme-freshguard-new img.hero-bg-mobile,
+  html body.theme-freshguard-new .hero .hero-bg-mobile {
+    display: block !important;
+    object-position: center 30% !important;
+  }
+}
+
+html body.theme-freshguard-new .shell,
+html body.theme-freshguard-new .shell-wide,
+html body.theme-freshguard-new .nav-row,
+html body.theme-freshguard-new .hero-inner {
+  max-width: 100%;
+  min-width: 0;
+}
+
+html body.theme-freshguard-new .nav {
+  height: var(--nav) !important;
+}
+html body.theme-freshguard-new .logo img {
+  height: 46px !important;
+  width: auto !important;
+  max-height: 46px !important;
+}
+
+html body.theme-freshguard-new .tag,
+html body.theme-freshguard-new .hero .tag,
+html body.theme-freshguard-new .elementor .tag {
+  background: #8fc640 !important;
+  color: #021619 !important;
+  border: 1px solid rgba(2, 22, 25, 0.08) !important;
+}
+
+html body.theme-freshguard-new .tag:hover,
+html body.theme-freshguard-new .hero .tag:hover {
+  background: #d7f08a !important;
+}
+
+.site,
+.site-content,
+#content,
+#page,
+#primary,
+.entry-content,
+.elementor,
+.elementor-section-wrap,
+.elementor-top-section,
+.e-con,
+.e-con > .e-con-inner,
+.elementor-container,
+.elementor-column-wrap,
+.elementor-widget-wrap {
+  max-width: 100% !important;
+  min-width: 0 !important;
+}
+
+html body.theme-freshguard-new .e-con,
+html body.theme-freshguard-new .e-con-inner,
+html body.theme-freshguard-new .elementor-section,
+html body.theme-freshguard-new .elementor-element {
+  --padding-top: 0px;
+  --padding-right: 0px;
+  --padding-bottom: 0px;
+  --padding-left: 0px;
+  --padding-block-start: 0px;
+  --padding-block-end: 0px;
+  --padding-inline-start: 0px;
+  --padding-inline-end: 0px;
+  --gap: 0px;
+  --content-width: 100%;
+  --container-max-width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.elementor-section.elementor-section-boxed > .elementor-container,
+.e-con.e-con-boxed,
+.e-con-boxed .e-con-inner {
+  max-width: 100% !important;
+}
+
+html body.theme-freshguard-new .elementor-section,
+html body.theme-freshguard-new .e-con.e-parent,
+html body.theme-freshguard-new .e-con-inner {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+html body.theme-freshguard-new .elementor-section.elementor-section-stretched {
+  left: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  transform: none !important;
+}
+
+.elementor-widget-freshguard_landing,
+.elementor-widget-fgn_hero,
+.elementor-widget-fgn_welcome,
+.elementor-widget-fgn_services,
+.elementor-widget-fgn_europe,
+.elementor-widget-fgn_assess,
+.elementor-widget-fgn_partners,
+.elementor-widget-fgn_contact,
+.elementor-widget-fgn_articles,
+.elementor-widget-freshguard_landing > .elementor-widget-container,
+.elementor-widget-fgn_hero > .elementor-widget-container,
+.elementor-widget-fgn_welcome > .elementor-widget-container,
+.elementor-widget-fgn_services > .elementor-widget-container,
+.elementor-widget-fgn_europe > .elementor-widget-container,
+.elementor-widget-fgn_assess > .elementor-widget-container,
+.elementor-widget-fgn_partners > .elementor-widget-container,
+.elementor-widget-fgn_contact > .elementor-widget-container,
+.elementor-widget-fgn_articles > .elementor-widget-container,
+.fg-el-wrap {
+  max-width: 100% !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.elementor-page .hentry,
+.elementor-page article.post,
+.elementor-page article.page,
+.elementor-page > article,
+#content > article,
+#primary > article {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  max-width: none;
+  width: 100%;
+}
+
+.elementor-page .entry-header,
+.elementor-page .entry-footer,
+.elementor-page .page-header,
+.elementor-page .post-thumbnail,
+.elementor-page .entry-title {
+  display: none !important;
+}
+
+:root {
+  --container-max-width: 100% !important;
+}
+
+#wpadminbar,
+#wpadminbar * {
+  box-sizing: content-box;
+}
+
+body.admin-bar .nav {
+  top: 32px;
+}
+
+@media screen and (max-width: 782px) {
+  body.admin-bar .nav {
+    top: 46px;
+  }
+}
+
+/* Grids must be allowed to shrink on small screens */
+html body.theme-freshguard-new .service-grid,
+html body.theme-freshguard-new .about-grid,
+html body.theme-freshguard-new .assess-grid,
+html body.theme-freshguard-new .contact-grid,
+html body.theme-freshguard-new .europe-inner,
+html body.theme-freshguard-new .partner-grid,
+html body.theme-freshguard-new .art-grid,
+html body.theme-freshguard-new .stats-row,
+html body.theme-freshguard-new form,
+html body.theme-freshguard-new article.service,
+html body.theme-freshguard-new article.art,
+html body.theme-freshguard-new .about-media,
+html body.theme-freshguard-new .about-copy,
+html body.theme-freshguard-new .assess-media,
+html body.theme-freshguard-new .assess-copy,
+html body.theme-freshguard-new .form {
+  min-width: 0 !important;
+}
+
+/* Service cards: HTML look, images capped so they cannot overflow */
+html body.theme-freshguard-new section.services article.service,
+html body.theme-freshguard-new .elementor article.service {
+  background: #ffffff !important;
+  border: 1px solid #8fc640 !important;
+  border-radius: 18px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+  box-sizing: border-box !important;
+}
+
+html body.theme-freshguard-new section.services article.service figure,
+html body.theme-freshguard-new .elementor article.service figure,
+html body.theme-freshguard-new section.services article.service picture,
+html body.theme-freshguard-new .elementor article.service picture {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+}
+
+html body.theme-freshguard-new section.services article.service img,
+html body.theme-freshguard-new .elementor article.service img {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 280px !important;
+  object-fit: cover !important;
+  object-position: center 45% !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  display: block !important;
+}
+
+html body.theme-freshguard-new article.service img[src*="fog"] { object-position: 70% 62% !important; }
+html body.theme-freshguard-new article.service img[src*="thermal"] { object-position: 55% 50% !important; }
+html body.theme-freshguard-new article.service img[src*="vent"] { object-position: 40% 40% !important; }
+
+html body.theme-freshguard-new .service-body {
+  padding: 22px 22px 26px !important;
+  margin: 0 !important;
+}
+
+html body.theme-freshguard-new .service-body .n {
+  font-family: Figtree, system-ui, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: #6b9428 !important;
+  margin: 0 0 8px !important;
+}
+
+html body.theme-freshguard-new .service-body h3 {
+  font-family: Outfit, Figtree, sans-serif !important;
+  font-size: 22px !important;
+  font-weight: 650 !important;
+  letter-spacing: -0.025em !important;
+  line-height: 1.12 !important;
+  color: #021619 !important;
+  margin: 0 0 10px !important;
+  max-width: 18ch !important;
+}
+
+html body.theme-freshguard-new .service-body p {
+  font-family: Figtree, system-ui, sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+  color: #5a6b52 !important;
+  margin: 0 !important;
+}
+
+html body.theme-freshguard-new article.art {
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  border-radius: 18px !important;
+}
+
+html body.theme-freshguard-new article.art img {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 210px !important;
+  object-fit: cover !important;
+  object-position: center 40% !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+}
+
+/* ── Laptop ── */
+@media (max-width: 1199px) {
+  html body.theme-freshguard-new article.service img {
+    height: 240px !important;
+  }
+  html body.theme-freshguard-new .phone {
+    display: none !important;
+  }
+}
+
+/* ── Tablet ── */
+@media (max-width: 980px) {
+  html body.theme-freshguard-new .nav-links {
+    display: none !important;
+  }
+  html body.theme-freshguard-new .menu {
+    display: inline-flex !important;
+  }
+  html body.theme-freshguard-new .nav-row {
+    display: flex !important;
+    grid-template-columns: none !important;
+  }
+
+  html body.theme-freshguard-new .about-grid,
+  html body.theme-freshguard-new .assess-grid,
+  html body.theme-freshguard-new .contact-grid,
+  html body.theme-freshguard-new .europe-inner,
+  html body.theme-freshguard-new .partner-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  html body.theme-freshguard-new .service-grid,
+  html body.theme-freshguard-new .art-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 14px !important;
+  }
+
+  html body.theme-freshguard-new article.service img {
+    height: 210px !important;
+  }
+  html body.theme-freshguard-new .service-body {
+    padding: 16px 16px 20px !important;
+  }
+  html body.theme-freshguard-new .service-body h3 {
+    font-size: 18px !important;
+    max-width: none !important;
+  }
+
+  html body.theme-freshguard-new .places {
+    grid-template-columns: 1fr !important;
+  }
+  html body.theme-freshguard-new .assess-media {
+    order: -1 !important;
+    min-height: 280px !important;
+  }
+  html body.theme-freshguard-new .about-media {
+    order: -1 !important;
+    max-height: 360px !important;
+  }
+  html body.theme-freshguard-new .contact-copy {
+    position: static !important;
+    top: auto !important;
+  }
+  html body.theme-freshguard-new article.art img {
+    height: 160px !important;
+  }
+  html body.theme-freshguard-new .art-list {
+    grid-template-columns: 1fr !important;
+  }
+  html body.theme-freshguard-new .hero {
+    align-items: center !important;
+    padding-top: var(--nav) !important;
+  }
+}
+
+/* ── Mobile ── */
+@media (max-width: 700px) {
+  html body.theme-freshguard-new .logo img {
+    height: 40px !important;
+    max-height: 40px !important;
+  }
+  html body.theme-freshguard-new .service-grid,
+  html body.theme-freshguard-new .art-grid,
+  html body.theme-freshguard-new .partner-grid,
+  html body.theme-freshguard-new .stats-row,
+  html body.theme-freshguard-new form {
+    grid-template-columns: 1fr !important;
+  }
+
+  html body.theme-freshguard-new article.service img {
+    height: 240px !important;
+  }
+  html body.theme-freshguard-new article.art img {
+    height: 180px !important;
+  }
+
+  html body.theme-freshguard-new .hero-bg-pc {
+    display: none !important;
+  }
+  html body.theme-freshguard-new .hero-bg-mobile {
+    display: block !important;
+  }
+  html body.theme-freshguard-new .hero-actions {
+    flex-direction: column !important;
+  }
+  html body.theme-freshguard-new .hero-actions .btn {
+    width: 100% !important;
+  }
+  html body.theme-freshguard-new .hero-inner {
+    width: min(100%, calc(100% - 32px)) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 16px 0 24px !important;
+  }
+
+  html body.theme-freshguard-new .foot-top,
+  html body.theme-freshguard-new .foot-bottom,
+  html body.theme-freshguard-new .form-bottom {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  html body.theme-freshguard-new .form-bottom .btn {
+    width: 100% !important;
+  }
+  html body.theme-freshguard-new footer {
+    padding-bottom: 108px !important;
+  }
+  html body.theme-freshguard-new .foot-bottom {
+    padding-right: 0 !important;
+  }
+}
+
+/* Elementor editor: .fx stays opacity 0 until JS adds .in, which often
+   never runs because widgets inject after main.js. Force copy visible. */
+body.elementor-editor-active .fx,
+body.elementor-editor-preview .fx,
+.elementor-editor-active .fx,
+.elementor-editor-preview .fx,
+.elementor-edit-area .fx,
+body.elementor-editor-preview .europe .places span,
+.elementor-editor-preview .europe .places span {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
+
+body.elementor-editor-preview .hero-inner,
+body.elementor-editor-preview .europe-inner,
+body.elementor-editor-preview .about-copy,
+body.elementor-editor-preview .assess-copy,
+body.elementor-editor-preview .contact-copy,
+body.elementor-editor-preview .section-head,
+body.elementor-editor-preview .service-body,
+body.elementor-editor-preview .stats,
+body.elementor-editor-preview .form,
+.elementor-editor-preview .hero-inner,
+.elementor-editor-preview .europe-inner {
+  position: relative !important;
+  z-index: 4 !important;
+  opacity: 1 !important;
+}
+
+body.elementor-editor-preview .hero-bg,
+body.elementor-editor-preview .europe-bg,
+.elementor-editor-preview .hero-bg,
+.elementor-editor-preview .europe-bg {
+  z-index: 0 !important;
+}

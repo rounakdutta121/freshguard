@@ -1,0 +1,36 @@
+/* Loaded only in the Elementor preview iframe — not on the live site.
+   Landing copy uses .fx { opacity: 0 } until JS adds .in. Widgets inject
+   after that script, so headlines stay invisible in the editor. */
+.fx,
+.europe .places span {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
+
+.hero-bg,
+.europe-bg {
+  z-index: 0 !important;
+}
+
+.hero::after,
+.europe::after,
+.contact::before {
+  z-index: 1 !important;
+}
+
+.hero-inner,
+.europe-inner,
+.about-copy,
+.assess-copy,
+.contact-copy,
+.section-head,
+.service-body,
+.stats,
+.form,
+.nav {
+  position: relative !important;
+  z-index: 4 !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
