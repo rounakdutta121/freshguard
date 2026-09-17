@@ -164,7 +164,7 @@ class Widget_Welcome extends Fgn_Base_Widget {
 				'default'     => array(
 					array( 'value' => '99.9999%', 'label' => 'bacteria, viruses and fungi killed' ),
 					array( 'value' => 'Two-stage', 'label' => 'structured remediation process' ),
-					array( 'value' => '3 countries', 'label' => 'Netherlands, France, Portugal' ),
+					array( 'value' => '3 Countries', 'label' => 'Netherlands, France, Portugal' ),
 				),
 				'title_field' => '{{{ value }}}',
 			)

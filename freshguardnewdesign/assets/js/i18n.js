@@ -20,17 +20,36 @@
     'FreshGuard · Specialists': 'FreshGuard · Specialisten',
     'Your': 'Jouw',
     'Space, Our Priority.': 'ruimte, onze prioriteit.',
-    'Accredited advanced mold remediation and moisture specialists. Welcome to FreshGuard — expert mold removal, indoor air protection and professional biocidal sanitization.':
+    'Accredited Advanced Mold Remediation & Moisture Specialists. Welcome to FreshGuard — expert mold removal, indoor air protection and professional biocidal sanitization.':
       'Erkende specialisten in geavanceerde schimmelsanering en vochtbestrijding. Welkom bij FreshGuard — expert in schimmelverwijdering, bescherming van binnenlucht en professionele biocide desinfectie.',
     'Mold remediation': 'Schimmelsanering',
     'Moisture assessment': 'Vochtinspectie',
     'Biocidal sanitization': 'Biocide desinfectie',
     'Ventilation': 'Ventilatie',
+    'Crawlspace insulation': 'Kruipruimte-isolatie',
+    'Excellent': 'Uitstekend',
+    'Based on Google reviews': 'Op basis van Google-reviews',
+    'Accreditation': 'Accreditatie',
+    'Accredited Advanced Mold Remediation & Moisture Specialists':
+      'Erkende specialisten in geavanceerde schimmelsanering en vochtbestrijding',
+    'Why homeowners trust FreshGuard': 'Waarom huiseigenaren FreshGuard vertrouwen',
+    'Qualified specialists. Proven protection.': 'Gekwalificeerde specialisten. Bewezen bescherming.',
+    'Professional mould and moisture solutions—with confidence built in.':
+      'Professionele schimmel- en vochtoplossingen—met ingebouwd vertrouwen.',
+    'bacteria, viruses and fungi killed with advanced treatment':
+      'bacteriën, virussen en schimmels gedood met geavanceerde behandeling',
+    'structured remediation process built to prevent regrowth':
+      'gestructureerd saneringsproces ontworpen om hergroei te voorkomen',
+    'Netherlands, France, Portugal — recommended by homeowners':
+      'Nederland, Frankrijk, Portugal — aanbevolen door huiseigenaren',
+    'Professional-grade treatments': 'Professionele behandelingen',
+    'Root-cause focused': 'Gericht op de oorzaak',
+    'Residential & commercial': 'Particulier & zakelijk',
 
     'bacteria, viruses and fungi killed': 'bacteriën, virussen en schimmels gedood',
     'Two-stage': 'Tweefasen',
     'structured remediation process': 'gestructureerd saneringsproces',
-    '3 countries': '3 landen',
+    '3 Countries': '3 landen',
     'Netherlands, France, Portugal': 'Nederland, Frankrijk, Portugal',
 
     'Welcome': 'Welkom',
@@ -43,6 +62,7 @@
       'Naast biocide desinfectie bieden we professionele oxidatie-fogging voor geurbestrijding, desinfectie en hygiëne van de hele ruimte — lucht, oppervlakken en moeilijk bereikbare plekken die gewone reiniging niet haalt.',
 
     'Our Services': 'Onze diensten',
+    'Five disciplines. One indoor standard.': 'Vijf disciplines. Eén binnenklimaatstandaard.',
     'Four disciplines. One indoor standard.': 'Vier disciplines. Eén binnenklimaatstandaard.',
     'Pick the service you need, or combine them. Every property is different — we start by understanding the cause.':
       'Kies de dienst die u nodig heeft, of combineer ze. Elk pand is anders — we beginnen bij de oorzaak.',
@@ -58,6 +78,30 @@
     'Ventilation & Humidity Control': 'Ventilatie & vochtbeheersing',
     'Ongoing indoor monitoring of humidity, temperature and moisture to reduce recurrence and keep the indoor climate healthy.':
       'Doorlopende monitoring van luchtvochtigheid, temperatuur en vocht binnenshuis om terugkeer te beperken en het binnenklimaat gezond te houden.',
+    'Crawlspace Insulation / Isolation': 'Kruipruimte-isolatie',
+    'Clean and prepare the crawlspace, then install a 15 cm HR++ EPS bead layer to reduce cold floors and rising moisture.':
+      'Reinig en bereid de kruipruimte voor en plaats daarna een 15 cm HR++ EPS-parellaag om koude vloeren en optrekkend vocht te verminderen.',
+    'Warmer floors. A drier, healthier home.': 'Warmere vloeren. Een droger, gezonder huis.',
+    'FreshGuard cleans and prepares your crawlspace before installing a 15 cm layer of grey HR++ EPS insulation beads. This durable, moisture-resistant layer helps reduce cold and rising moisture from beneath your home.':
+      'FreshGuard reinigt en bereidt uw kruipruimte voor voordat we een 15 cm laag grijze HR++ EPS-isolatieparels aanbrengen. Deze duurzame, vochtbestendige laag helpt kou en optrekkend vocht onder uw woning te verminderen.',
+    'Warmer floors and improved comfort': 'Warmere vloeren en meer comfort',
+    'Helps reduce moisture and mould risk': 'Helpt vocht- en schimmelrisico te verminderen',
+    'Fast, clean installation without major building work': 'Snelle, schone plaatsing zonder grootschalig breekwerk',
+    'Request a Free Quote →': 'Vraag een gratis offerte aan →',
+    'Eco organic option': 'Eco-organische optie',
+    'Pathogon': 'Pathogon',
+    'MOULD AWAY': 'MOULD AWAY',
+    'Eco Organic': 'Eco Organic',
+    'Stage One': 'Stage One',
+    'Mould Treatment': 'Schimmelbehandeling',
+    '✓ Ready To Use': '✓ Klaar voor gebruik',
+    'Customers can choose 100% organic and professional products. Where suitable, FreshGuard offers Pathogon MOULD AWAY Eco Organic as a ready-to-use stage-one treatment option.':
+      'Klanten kunnen kiezen voor 100% organische en professionele producten. Waar geschikt biedt FreshGuard Pathogon MOULD AWAY Eco Organic als kant-en-klare stage-one behandeling.',
+    'Ask about organic treatment': 'Vraag naar organische behandeling',
+    'Independent experts we bring in when your property needs specialised diagnostics or regulated biocidal support.':
+      'Onafhankelijke specialisten die we inschakelen wanneer uw pand gespecialiseerde diagnostiek of gereguleerde biocide-ondersteuning nodig heeft.',
+    'Leak detection': 'Lekdetectie',
+    'Biocidal partners': 'Biocide-partners',
 
     'Across Europe': 'Door heel Europa',
     'Smart protection. Built for the long term.': 'Slimme bescherming. Gebouwd voor de lange termijn.',

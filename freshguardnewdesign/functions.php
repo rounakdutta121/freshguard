@@ -2,7 +2,7 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-define( 'FGN_VERSION', '1.0.31' );
+define( 'FGN_VERSION', '1.0.32' );
 define( 'FGN_DIR', get_template_directory() );
 define( 'FGN_URI', get_template_directory_uri() );
 require_once FGN_DIR . '/inc/helpers.php';

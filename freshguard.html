@@ -114,8 +114,8 @@
 
     .btn {
       display: inline-flex; align-items: center; justify-content: center;
-      min-height: 46px; padding: 0 20px; border-radius: 999px; border: 0;
-      font-size: 14px; font-weight: 650; cursor: pointer;
+      min-height: 56px; padding: 0 28px; border-radius: 999px; border: 0;
+      font-size: 16px; font-weight: 700; cursor: pointer;
       transition: transform .2s var(--ease), background .2s, color .2s, border-color .2s;
     }
     .btn:hover { transform: translateY(-1px); }
@@ -210,61 +210,178 @@
     .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 28px; }
     .tags { display: flex; flex-wrap: wrap; gap: 8px; }
     .tag {
-      padding: 8px 12px;
+      padding: 12px 18px;
       border-radius: 999px;
       border: 1px solid rgba(2, 22, 25, 0.08);
       background: var(--aqua);
-      font-size: 13px;
-      font-weight: 600;
+      font-size: 14px;
+      font-weight: 700;
       color: var(--ink);
       text-decoration: none;
     }
 
-    /* STATS */
-    .stats {
+    .google-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding: 10px 16px;
+      margin-bottom: 18px;
+      border-radius: 999px;
+      background: rgba(2, 22, 25, 0.55);
+      border: 1px solid rgba(143, 198, 64, 0.35);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      color: #fff;
+      text-decoration: none;
+      max-width: 100%;
+    }
+    .google-badge .g-mark { width: 22px; height: 22px; flex: 0 0 auto; }
+    .google-badge .gb-excellent {
+      color: #f4c430; font-weight: 800; font-size: 14px; letter-spacing: 0.02em;
+    }
+    .google-badge .gb-score { font-weight: 700; font-size: 14px; }
+    .google-badge .gb-stars {
+      color: #f4c430; letter-spacing: 1px; font-size: 13px; line-height: 1;
+    }
+    .google-badge .gb-meta {
+      font-size: 12px; color: rgba(255,255,255,.82); font-weight: 500;
+    }
+
+    /* TRUST / PROOF */
+    .trust {
       background: var(--fog);
       border-bottom: 1px solid var(--line);
-      padding: 36px 0 40px;
+      padding: clamp(48px, 7vw, 72px) 0;
+      scroll-margin-top: calc(var(--nav) + 12px);
     }
+    .trust .section-head {
+      margin-left: auto; margin-right: auto; text-align: center; justify-items: center;
+    }
+    .trust .section-head p { margin-left: auto; margin-right: auto; }
     .stats-row {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 18px;
+      margin-bottom: 18px;
     }
     .stat {
       text-align: left;
-      padding: 24px 22px 22px 26px;
+      padding: 28px 24px 26px 26px;
       background: #fff;
       border-radius: var(--radius);
-      border: 1px solid var(--line);
-      box-shadow: 0 12px 32px rgba(2, 22, 25, 0.08);
+      border: 1px solid rgba(143, 198, 64, 0.45);
+      box-shadow: 0 14px 36px rgba(2, 22, 25, 0.07);
       position: relative;
       overflow: hidden;
+      display: grid;
+      gap: 10px;
+      align-content: start;
     }
     .stat::before {
       content: "";
       position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
+      left: 0; top: 0; bottom: 0;
       width: 5px;
       background: var(--aqua);
+    }
+    .stat-ico {
+      width: 42px; height: 42px; color: var(--aqua-strong);
+      display: grid; place-items: center;
+    }
+    .stat-ico svg { width: 36px; height: 36px; }
+    .stat .stars {
+      color: #f4c430; letter-spacing: 2px; font-size: 14px; line-height: 1;
     }
     .stat strong {
       display: block;
       font-family: var(--display);
-      font-size: clamp(28px, 3.2vw, 40px);
-      font-weight: 700;
+      font-size: clamp(30px, 3.6vw, 44px);
+      font-weight: 800;
       letter-spacing: -0.03em;
-      margin-bottom: 8px;
+      margin: 0;
       color: var(--ink);
     }
     .stat span {
       display: block;
       font-size: 15px;
-      font-weight: 650;
-      line-height: 1.4;
+      font-weight: 600;
+      line-height: 1.45;
       color: var(--muted);
+    }
+    .trust-bar {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      background: var(--ink);
+      color: #fff;
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-top: 6px;
+    }
+    .trust-bar div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 18px 16px;
+      font-size: 14px;
+      font-weight: 650;
+      border-right: 1px solid rgba(255,255,255,.12);
+    }
+    .trust-bar div:last-child { border-right: 0; }
+    .trust-bar svg { width: 20px; height: 20px; color: var(--aqua); flex: 0 0 auto; }
+
+    .accredit {
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+      padding: 36px 0;
+    }
+    .accredit-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+      flex-wrap: wrap;
+    }
+    .accredit-copy { display: grid; gap: 6px; max-width: 520px; }
+    .accredit-copy .label { margin-bottom: 0; }
+    .accredit-copy strong {
+      font-family: var(--display);
+      font-size: clamp(18px, 2vw, 22px);
+      color: var(--ink);
+      line-height: 1.3;
+    }
+    .accredit-logos {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+    .accredit-badge {
+      width: 118px;
+      height: 118px;
+      border-radius: 50%;
+      background: #fff;
+      border: 1px solid var(--line);
+      box-shadow: 0 10px 28px rgba(2, 22, 25, 0.08);
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      padding: 14px;
+      flex: 0 0 auto;
+    }
+    .accredit-badge img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      display: block;
+      border: 0;
+      border-radius: 0;
+      padding: 0;
+      background: transparent;
+      max-width: none;
     }
 
     /* SECTION BASE */
@@ -352,7 +469,7 @@
       color: #4e7a18;
     }
 
-    /* SERVICES — clean 2x2 */
+    /* SERVICES */
     .services { background: var(--fog); }
     .service-grid {
       display: grid;
@@ -392,6 +509,206 @@
       max-width: 18ch;
     }
     .service-body p { font-size: 15px; }
+
+    /* CRAWLSPACE */
+    .crawlspace {
+      background: var(--fog);
+      scroll-margin-top: calc(var(--nav) + 12px);
+      padding: 0;
+      overflow: hidden;
+    }
+    .crawl-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 0;
+      align-items: stretch;
+      min-height: min(72vh, 680px);
+      background: transparent;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+      overflow: hidden;
+    }
+    .crawl-media {
+      position: relative;
+      min-height: 420px;
+      background: var(--deep);
+      height: 100%;
+    }
+    .ba-slider {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      touch-action: none;
+      cursor: ew-resize;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    .ba-slider img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      pointer-events: none;
+      max-width: none;
+    }
+    .ba-before { z-index: 1; }
+    .ba-after-wrap {
+      position: absolute;
+      inset: 0 auto 0 0;
+      z-index: 2;
+      width: 50%;
+      overflow: hidden;
+    }
+    .ba-after-wrap img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      max-width: none;
+      object-fit: cover;
+      object-position: center;
+    }
+    .ba-handle {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 3px;
+      margin-left: -1.5px;
+      background: var(--aqua);
+      z-index: 3;
+      pointer-events: none;
+    }
+    .ba-handle::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 44px;
+      height: 44px;
+      margin: -22px 0 0 -22px;
+      border-radius: 50%;
+      background: #fff;
+      border: 3px solid var(--aqua);
+      box-shadow: 0 8px 24px rgba(2,22,25,.25);
+      background-image:
+        linear-gradient(var(--ink), var(--ink)),
+        linear-gradient(var(--ink), var(--ink));
+      background-size: 2px 12px, 2px 12px;
+      background-position: 14px center, 28px center;
+      background-repeat: no-repeat;
+    }
+    .ba-label {
+      position: absolute;
+      top: 18px;
+      z-index: 4;
+      padding: 7px 14px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      pointer-events: none;
+    }
+    .ba-label-before {
+      left: 18px;
+      background: #0a1f2e;
+      color: #fff;
+    }
+    .ba-label-after {
+      right: 18px;
+      background: var(--aqua);
+      color: var(--ink);
+    }
+    .crawl-copy {
+      padding: clamp(36px, 5vw, 64px) clamp(28px, 4vw, 56px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: #fff;
+    }
+    .crawl-copy h2 { font-size: clamp(28px, 3.5vw, 40px); margin: 0 0 14px; }
+    .crawl-copy > p { margin-bottom: 18px; }
+    .crawl-list {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+      margin: 0 0 26px;
+      padding: 0;
+    }
+    .crawl-list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      font-weight: 650;
+      color: var(--ink);
+      font-size: 15px;
+    }
+    .crawl-list li svg {
+      width: 20px; height: 20px;
+      color: var(--aqua-strong);
+      flex: 0 0 auto;
+      margin-top: 1px;
+    }
+
+    /* ORGANIC / PATHOGON */
+    .organic {
+      background: linear-gradient(180deg, #f3f9ea 0%, #fff 70%);
+      overflow: hidden;
+    }
+    .organic-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(24px, 4vw, 48px);
+      align-items: center;
+      position: relative;
+    }
+    .organic-grid::before {
+      content: "";
+      position: absolute;
+      left: -8%;
+      top: -20%;
+      width: 55%;
+      height: 120%;
+      background: radial-gradient(ellipse at center, rgba(143,198,64,.22), transparent 70%);
+      pointer-events: none;
+    }
+    .organic-copy, .organic-media { position: relative; z-index: 1; }
+    .organic-kicker {
+      font-family: var(--display);
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 18px;
+      color: #2b2a4a;
+    }
+    .organic-kicker .line-green { color: var(--aqua-strong); display: block; }
+    .organic-kicker .line-navy { color: #2b2a4a; display: block; }
+    .organic-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      border-radius: 10px;
+      background: #b56a96;
+      color: #fff;
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+    .organic-copy p { max-width: 40ch; margin-bottom: 18px; }
+    .organic-media img {
+      width: 100%;
+      max-height: 460px;
+      object-fit: contain;
+      object-position: center bottom;
+      display: block;
+    }
 
     /* EUROPE */
     .europe {
@@ -530,7 +847,30 @@
       background: var(--white);
       border: 1px solid var(--aqua);
       border-radius: var(--radius);
-      padding: 28px;
+      padding: 32px 28px;
+      box-shadow: 0 14px 36px rgba(2,22,25,.05);
+      position: relative;
+      overflow: hidden;
+    }
+    .partner::after {
+      content: "";
+      position: absolute;
+      right: -18px;
+      top: -18px;
+      width: 72px;
+      height: 72px;
+      background: url("assets/leaves-2.svg") center / contain no-repeat;
+      opacity: 0.35;
+      pointer-events: none;
+    }
+    .partner .p-tag {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--aqua-strong);
+      margin-bottom: 10px;
     }
     .partner h3 { font-size: 22px; margin-bottom: 10px; }
     .partner p { font-size: 15px; }
@@ -1068,7 +1408,7 @@
       .tags { gap: 8px; }
       .tag { font-size: 12px; }
 
-      .stats { padding: 22px 0; }
+      .trust { padding: 40px 0; }
       .stats-row { gap: 12px; }
       .stat strong { font-size: clamp(22px, 4vw, 30px); }
       .stat span { font-size: 13px; }
@@ -1080,7 +1420,11 @@
       .assess-grid,
       .contact-grid,
       .europe-inner,
-      .partner-grid { grid-template-columns: 1fr; gap: 24px; }
+      .partner-grid,
+      .crawl-grid,
+      .organic-grid,
+      .stats-row,
+      .trust-bar { grid-template-columns: 1fr; gap: 24px; }
 
       .about {
         background-position: 72% center;
@@ -1143,6 +1487,27 @@
           linear-gradient(180deg, rgba(2,22,25,.22) 0%, rgba(2,22,25,.1) 34%, rgba(2,22,25,.5) 100%);
       }
       .hero h1 { font-size: clamp(40px, 11.5vw, 52px); }
+      .accredit-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .accredit-copy {
+        max-width: 100%;
+        justify-items: center;
+      }
+      .accredit-logos {
+        justify-content: center;
+        width: 100%;
+      }
+      .accredit-badge { width: 96px; height: 96px; padding: 12px; }
+      .trust-bar div { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.12); justify-content: flex-start; }
+      .trust-bar div:last-child { border-bottom: 0; }
+      .crawl-media { min-height: 280px; }
+      .crawl-copy { padding: 28px var(--pad) 36px; }
+      .crawl-grid { min-height: 0; }
+      .nav-right .btn { min-height: 44px; font-size: 13px; padding: 0 16px; }
+
       .hero p { font-size: 15px; margin-bottom: 22px; }
       .hero-actions { gap: 10px; }
       .hero-actions .btn { width: 100%; }
@@ -1161,8 +1526,9 @@
         text-align: center;
       }
 
-      .stats { padding: 24px 0 28px; }
+      .trust { padding: 40px 0; }
       .stats-row { grid-template-columns: 1fr; gap: 12px; }
+      .trust-bar { grid-template-columns: 1fr; }
       .stat {
         text-align: left;
         display: block;
@@ -1301,14 +1667,21 @@
     <img class="hero-bg hero-bg-pc" src="assets/fg2-hero.jpg" alt="FreshGuard specialist in a modern home" />
     <img class="hero-bg hero-bg-mobile" src="assets/fg2-hero-mobile.jpg" alt="FreshGuard specialist in a modern home" />
     <div class="hero-inner">
-      <div class="brand-line fx">FreshGuard · Specialists</div>
-      <h1 class="fx" style="--d:1"><span>Your</span> Space, Our Priority.</h1>
-      <p class="fx" style="--d:2">Accredited advanced mold remediation and moisture specialists. Welcome to FreshGuard — expert mold removal, indoor air protection and professional biocidal sanitization.</p>
-      <div class="hero-actions fx" style="--d:3">
+      <a class="google-badge fx" href="#trust" aria-label="Google reviews 4.9 out of 5">
+        <svg class="g-mark" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+        <span class="gb-excellent">Excellent</span>
+        <span class="gb-score">4.9/5</span>
+        <span class="gb-stars" aria-hidden="true">★★★★★</span>
+        <span class="gb-meta">Based on Google reviews</span>
+      </a>
+      <div class="brand-line fx" style="--d:1">FreshGuard · Specialists</div>
+      <h1 class="fx" style="--d:2"><span>Your</span> Space, Our Priority.</h1>
+      <p class="fx" style="--d:3">Accredited Advanced Mold Remediation & Moisture Specialists. Welcome to FreshGuard — expert mold removal, indoor air protection and professional biocidal sanitization.</p>
+      <div class="hero-actions fx" style="--d:4">
         <a class="btn btn-aqua" href="#contact">Get Quote</a>
         <a class="btn btn-ghost" href="#services">Learn More</a>
       </div>
-      <div class="tags fx" style="--d:4">
+      <div class="tags fx" style="--d:5">
         <a class="tag" href="#contact">Mold remediation</a>
         <a class="tag" href="#contact">Moisture assessment</a>
         <a class="tag" href="#contact">Biocidal sanitization</a>
@@ -1317,13 +1690,70 @@
     </div>
   </section>
 
-  <div class="stats">
-    <div class="shell stats-row">
-      <div class="stat fx"><strong>99.9999%</strong><span>bacteria, viruses and fungi killed</span></div>
-      <div class="stat fx" style="--d:1"><strong>Two-stage</strong><span>structured remediation process</span></div>
-      <div class="stat fx" style="--d:2"><strong>3 countries</strong><span>Netherlands, France, Portugal</span></div>
+  <div class="accredit">
+    <div class="shell accredit-row">
+      <div class="accredit-copy fx">
+        <div class="label">Accreditation</div>
+        <strong>Accredited Advanced Mold Remediation & Moisture Specialists</strong>
+      </div>
+      <div class="accredit-logos fx" style="--d:1">
+        <div class="accredit-badge" title="City & Guilds Accredited">
+          <img src="assets/logo-city-guilds.png" alt="City & Guilds Accredited" />
+        </div>
+        <div class="accredit-badge" title="dewpoint Tech.DEW">
+          <img src="assets/logo-dewpoint.png" alt="dewpoint Tech.DEW" />
+        </div>
+      </div>
     </div>
   </div>
+
+  <section class="trust" id="trust">
+    <div class="shell">
+      <div class="section-head">
+        <div class="label fx">Why homeowners trust FreshGuard</div>
+        <h2 class="fx" style="--d:1">Qualified specialists. Proven protection.</h2>
+        <p class="fx" style="--d:2">Professional mould and moisture solutions—with confidence built in.</p>
+      </div>
+      <div class="stats-row">
+        <div class="stat fx">
+          <div class="stat-ico" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="10" y="6" width="28" height="36" rx="3" stroke="currentColor" stroke-width="2.5"/><path d="M18 16h12M18 22h12M18 28h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="32" cy="34" r="7" fill="#8fc640"/><path d="M29 34l2 2 4-4" stroke="#021619" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <strong>99.9999%</strong>
+          <span>bacteria, viruses and fungi killed with advanced treatment</span>
+        </div>
+        <div class="stat fx" style="--d:1">
+          <div class="stat-ico" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="14" y="8" width="16" height="28" rx="3" stroke="currentColor" stroke-width="2.5"/><circle cx="22" cy="18" r="4" stroke="currentColor" stroke-width="2.5"/><path d="M18 28h8M30 14l8 4v10l-8 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <strong>Two-stage</strong>
+          <span>structured remediation process built to prevent regrowth</span>
+        </div>
+        <div class="stat fx" style="--d:2">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <div class="stat-ico" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 6l14 6v10c0 10-6.5 16.5-14 20-7.5-3.5-14-10-14-20V12l14-6z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M18 24l4 4 8-8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <strong>3 Countries</strong>
+          <span>Netherlands, France, Portugal — recommended by homeowners</span>
+        </div>
+      </div>
+      <div class="trust-bar fx" style="--d:3">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="2"/><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          Professional-grade treatments
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3c-4 1-7 5-7 10a7 7 0 0014 0c0-5-3-9-7-10z" stroke="currentColor" stroke-width="2"/><path d="M12 7v7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          Root-cause focused
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 10l8-6 8 6v9a1 1 0 01-1 1H5a1 1 0 01-1-1v-9z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M10 20v-6h4v6" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          Residential & commercial
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="about" id="about">
     <div class="shell about-grid">
@@ -1384,6 +1814,33 @@
     </div>
   </section>
 
+  <section class="crawlspace" id="crawlspace">
+      <div class="crawl-grid">
+        <div class="crawl-media fx">
+          <div class="ba-slider" id="crawlCompare" style="--pos: 50%;" role="slider" aria-label="Compare crawlspace before and after" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">
+            <img class="ba-before" src="assets/fg2-crawlspace-before.jpg" alt="Crawlspace before insulation" draggable="false" />
+            <div class="ba-after-wrap" style="width: var(--pos);">
+              <img src="assets/fg2-crawlspace-after.jpg" alt="Crawlspace after EPS bead insulation" draggable="false" />
+            </div>
+            <div class="ba-handle" style="left: var(--pos);"></div>
+            <span class="ba-label ba-label-before">Before</span>
+            <span class="ba-label ba-label-after">After</span>
+          </div>
+        </div>
+        <div class="crawl-copy">
+          <div class="label fx">Crawlspace insulation</div>
+          <h2 class="fx" style="--d:1">Warmer floors. A drier, healthier home.</h2>
+          <p class="fx" style="--d:2">FreshGuard cleans and prepares your crawlspace before installing a 15 cm layer of grey HR++ EPS insulation beads. This durable, moisture-resistant layer helps reduce cold and rising moisture from beneath your home.</p>
+          <ul class="crawl-list">
+            <li class="fx" style="--d:3"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M8 12l3 3 5-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Warmer floors and improved comfort</li>
+            <li class="fx" style="--d:4"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M8 12l3 3 5-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Helps reduce moisture and mould risk</li>
+            <li class="fx" style="--d:5"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M8 12l3 3 5-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Fast, clean installation without major building work</li>
+          </ul>
+          <a class="btn btn-aqua fx" style="--d:6" href="#contact">Request a Free Quote →</a>
+        </div>
+      </div>
+  </section>
+
   <section class="europe" id="europe">
     <img class="europe-bg" src="assets/fg2-europe.jpg" alt="European coastline" />
     <div class="shell-wide europe-inner">
@@ -1427,18 +1884,40 @@
     </div>
   </section>
 
+  <section class="organic" id="organic">
+    <div class="shell organic-grid">
+      <div class="organic-copy">
+        <div class="label fx">Eco organic option</div>
+        <div class="organic-kicker fx" style="--d:1">
+          <span class="line-navy">Pathogon</span>
+          <span class="line-green">MOULD AWAY</span>
+          <span class="line-navy">Eco Organic Stage One</span>
+        </div>
+        <div class="organic-badge fx" style="--d:2">✓ Ready To Use</div>
+        <p class="fx" style="--d:3">Customers can choose 100% organic and professional products. Where suitable, FreshGuard offers Pathogon MOULD AWAY Eco Organic as a ready-to-use stage-one treatment option.</p>
+        <a class="btn btn-aqua fx" style="--d:4" href="#contact">Ask about organic treatment</a>
+      </div>
+      <div class="organic-media fx" style="--d:2">
+        <img src="assets/fg2-pathogon-products.png" alt="Pathogon MOULD AWAY Eco Organic products" />
+      </div>
+    </div>
+  </section>
+
   <section class="partners" id="partners">
     <div class="shell">
       <div class="section-head">
         <div class="label fx">Our Trusted Partners</div>
         <h2 class="fx" style="--d:1">Specialists we work with</h2>
+        <p class="fx" style="--d:2">Independent experts we bring in when your property needs specialised diagnostics or regulated biocidal support.</p>
       </div>
       <div class="partner-grid">
         <article class="partner fx">
+          <div class="p-tag">Leak detection</div>
           <h3>BA-MAH Totaaltechniek</h3>
           <p>Non-destructive leak detection for houses, apartments, commercial properties and new-builds — thermography, acoustic detection, smoke testing, endoscopy and UV dye tracing.</p>
         </article>
         <article class="partner fx" style="--d:1">
+          <div class="p-tag">Biocidal partners</div>
           <h3>Professional biocidal partners</h3>
           <p>Trusted partners for professional mold removal and dry fogging. FreshGuard uses products listed under Article 95 of the ECHA list, compliant with the EU Biocidal Products Regulation.</p>
         </article>
@@ -1477,7 +1956,6 @@
             <select name="source">
               <option>Internet Search</option>
               <option>Facebook / Instagram</option>
-              <option>Flyer</option>
               <option>Referral</option>
             </select>
           </label>
@@ -1635,6 +2113,74 @@
         });
       }
 
+      /* Crawlspace before/after compare */
+      (function initCrawlCompare() {
+        var slider = document.getElementById('crawlCompare');
+        if (!slider) return;
+        var wrap = slider.querySelector('.ba-after-wrap');
+        var handle = slider.querySelector('.ba-handle');
+        var afterImg = wrap && wrap.querySelector('img');
+        var dragging = false;
+
+        function syncAfterSize() {
+          if (!afterImg) return;
+          var w = slider.clientWidth;
+          var h = slider.clientHeight;
+          afterImg.style.width = w + 'px';
+          afterImg.style.height = h + 'px';
+        }
+
+        function setPos(clientX) {
+          var rect = slider.getBoundingClientRect();
+          var p = ((clientX - rect.left) / rect.width) * 100;
+          if (p < 2) p = 2;
+          if (p > 98) p = 98;
+          slider.style.setProperty('--pos', p + '%');
+          if (wrap) wrap.style.width = p + '%';
+          if (handle) handle.style.left = p + '%';
+          slider.setAttribute('aria-valuenow', String(Math.round(p)));
+        }
+
+        syncAfterSize();
+        window.addEventListener('resize', syncAfterSize);
+
+        slider.addEventListener('pointerdown', function (e) {
+          dragging = true;
+          slider.setPointerCapture(e.pointerId);
+          setPos(e.clientX);
+        });
+        slider.addEventListener('pointermove', function (e) {
+          if (!dragging) return;
+          setPos(e.clientX);
+        });
+        function endDrag(e) {
+          dragging = false;
+          try { slider.releasePointerCapture(e.pointerId); } catch (err) {}
+        }
+        slider.addEventListener('pointerup', endDrag);
+        slider.addEventListener('pointercancel', endDrag);
+
+        slider.addEventListener('keydown', function (e) {
+          var cur = parseFloat(String(slider.style.getPropertyValue('--pos') || '50').replace('%', '')) || 50;
+          if (e.key === 'ArrowLeft') {
+            var nextL = Math.max(2, cur - 4);
+            slider.style.setProperty('--pos', nextL + '%');
+            if (wrap) wrap.style.width = nextL + '%';
+            if (handle) handle.style.left = nextL + '%';
+            slider.setAttribute('aria-valuenow', String(Math.round(nextL)));
+            e.preventDefault();
+          }
+          if (e.key === 'ArrowRight') {
+            var nextR = Math.min(98, cur + 4);
+            slider.style.setProperty('--pos', nextR + '%');
+            if (wrap) wrap.style.width = nextR + '%';
+            if (handle) handle.style.left = nextR + '%';
+            slider.setAttribute('aria-valuenow', String(Math.round(nextR)));
+            e.preventDefault();
+          }
+        });
+      })();
+
       /* Motion engine */
       var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -1661,8 +2207,11 @@
           stagger(heroInner.querySelector('.tags'), '.tag', 'fx-pop', 4);
         }
 
-        /* Stats */
+        /* Accredit + Trust */
+        stagger(document.querySelector('.accredit-row'), ':scope > *', 'fx-up', 0);
+        stagger(document.querySelector('.trust .section-head'), ':scope > *', 'fx-up', 0);
         stagger(document.querySelector('.stats-row'), '.stat', 'fx-scale', 0);
+        mark(document.querySelector('.trust-bar'), 'fx-up', 3);
 
         /* About */
         mark(document.querySelector('.about-media'), 'fx-left', 0);
@@ -1672,6 +2221,10 @@
         stagger(document.querySelector('.services .section-head'), ':scope > *', 'fx-up', 0);
         stagger(document.querySelector('.service-grid'), '.service', 'fx-scale', 1);
 
+        /* Crawlspace */
+        mark(document.querySelector('.crawl-media'), 'fx-left', 0);
+        stagger(document.querySelector('.crawl-copy'), ':scope > *', 'fx-right', 1);
+
         /* Europe */
         stagger(document.querySelector('.europe-top'), ':scope > *', 'fx-up', 0);
         stagger(document.querySelector('.europe-notes'), 'article', 'fx-right', 2);
@@ -1679,6 +2232,10 @@
         /* Assess */
         stagger(document.querySelector('.assess-copy'), ':scope > *', 'fx-left', 0);
         mark(document.querySelector('.assess-media'), 'fx-right', 2);
+
+        /* Organic */
+        stagger(document.querySelector('.organic-copy'), ':scope > *', 'fx-left', 0);
+        mark(document.querySelector('.organic-media'), 'fx-right', 2);
 
         /* Partners */
         stagger(document.querySelector('.partners .section-head'), ':scope > *', 'fx-up', 0);

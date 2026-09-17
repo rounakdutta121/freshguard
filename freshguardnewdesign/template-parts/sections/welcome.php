@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     <div class="shell stats-row">
       <div class="stat fx"><strong>99.9999%</strong><span>bacteria, viruses and fungi killed</span></div>
       <div class="stat fx" style="--d:1"><strong>Two-stage</strong><span>structured remediation process</span></div>
-      <div class="stat fx" style="--d:2"><strong>3 countries</strong><span>Netherlands, France, Portugal</span></div>
+      <div class="stat fx" style="--d:2"><strong>3 Countries</strong><span>Netherlands, France, Portugal</span></div>
     </div>
   </div>
 
