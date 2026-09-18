@@ -19,7 +19,9 @@
 
     'FreshGuard · Specialists': 'FreshGuard · Specialisten',
     'Your': 'Jouw',
-    'Space, Our Priority.': 'ruimte, onze prioriteit.',
+    'Space,': 'ruimte,',
+    'Our': 'Onze',
+    'Priority.': 'prioriteit.',
     'Accredited Advanced Mold Remediation & Moisture Specialists. Welcome to FreshGuard — expert mold removal, indoor air protection and professional biocidal sanitization.':
       'Erkende specialisten in geavanceerde schimmelsanering en vochtbestrijding. Welkom bij FreshGuard — expert in schimmelverwijdering, bescherming van binnenlucht en professionele biocide desinfectie.',
     'Mold remediation': 'Schimmelsanering',
@@ -27,12 +29,21 @@
     'Biocidal sanitization': 'Biocide desinfectie',
     'Ventilation': 'Ventilatie',
     'Crawlspace insulation': 'Kruipruimte-isolatie',
+    'Before': 'Voor',
+    'After': 'Na',
     'Excellent': 'Uitstekend',
     'Based on Google reviews': 'Op basis van Google-reviews',
     'Accreditation': 'Accreditatie',
     'Accredited Advanced Mold Remediation & Moisture Specialists':
       'Erkende specialisten in geavanceerde schimmelsanering en vochtbestrijding',
     'Why homeowners trust FreshGuard': 'Waarom huiseigenaren FreshGuard vertrouwen',
+    'Certified & Qualified': 'Gecertificeerd & gekwalificeerd',
+    'Specialists.': 'Specialisten.',
+    'Proven Protection.': 'Bewezen bescherming.',
+    'Space,': 'ruimte,',
+    'Our': 'Onze',
+    'Priority.': 'prioriteit.',
+
     'Qualified specialists. Proven protection.': 'Gekwalificeerde specialisten. Bewezen bescherming.',
     'Professional mould and moisture solutions—with confidence built in.':
       'Professionele schimmel- en vochtoplossingen—met ingebouwd vertrouwen.',
@@ -54,12 +65,24 @@
 
     'Welcome': 'Welkom',
     'Welcome to Fresh': 'Welkom bij Fresh',
-    'FreshGuard Mold Remediation, Indoor Air Protection & Professional Biocidal Sanitization':
-      'FreshGuard schimmelsanering, bescherming van binnenlucht en professionele biocide desinfectie',
-    'We treat bathrooms, bedrooms, basements, crawl spaces, garages, and rental properties using a structured two-stage remediation process. Our advanced dry fogging treatment targets mold at its root, eliminates airborne spores, and kills up to 99.9999% of harmful bacteria, viruses, and fungi. Unlike bleach-based cleaning, our approach goes beyond surface stains to help prevent regrowth. We also offer odor neutralization and hygiene fogging for residential and commercial environments.':
-      'Wij behandelen badkamers, slaapkamers, kelders, kruipruimtes, garages en huurwoningen met een gestructureerd tweefasen-saneringsproces. Onze geavanceerde dry-foggingbehandeling pakt schimmel bij de wortel aan, elimineert sporen in de lucht en doodt tot 99,9999% van schadelijke bacteriën, virussen en schimmels. Anders dan reinigen met bleek gaat onze aanpak verder dan vlekken op het oppervlak, om hergroei te helpen voorkomen. We bieden ook geurneutralisatie en hygiënefogging voor woningen en bedrijfsruimtes.',
-    'Alongside biocidal sanitization, we provide professional oxidation-based fogging for odor control, disinfection, and whole-space hygiene — effectively treating air, surfaces, and hard-to-reach areas that conventional cleaning cannot reach.':
-      'Naast biocide desinfectie bieden we professionele oxidatie-fogging voor geurbestrijding, desinfectie en hygiëne van de hele ruimte — lucht, oppervlakken en moeilijk bereikbare plekken die gewone reiniging niet haalt.',
+    'Professional Mold Remediation, Indoor Air Protection,':
+      'Professionele schimmelsanering, bescherming van binnenlucht,',
+    'Crawlspace Insulation & Biocidal Sanitisation':
+      'Kruipruimte-isolatie & biocide desinfectie',
+    'Safe. Certified. Effective protection for homes and businesses.':
+      'Veilig. Gecertificeerd. Effectieve bescherming voor woningen en bedrijven.',
+    'Using only high-quality products from leading UK manufacturers, FreshGuard targets visible mold at its source while reducing airborne spores—not simply disguising surface stains.':
+      'Met uitsluitend hoogwaardige producten van toonaangevende Britse fabrikanten pakt FreshGuard zichtbare schimmel bij de bron aan en vermindert sporen in de lucht—niet alleen oppervlaktevlekken.',
+    'Depending on your property and treatment requirements, you can choose between professional-strength biocidal solutions and 100% organic alternatives.':
+      'Afhankelijk van uw pand en behandelingsbehoefte kiest u tussen professionele biocide-oplossingen en 100% organische alternatieven.',
+    'Our proven two-stage remediation process combines detailed surface treatment with advanced dry fogging. The microscopic fog treats the air, surfaces and difficult-to-reach areas that conventional cleaning often misses.':
+      'Ons bewezen tweefasen-saneringsproces combineert grondige oppervlaktebehandeling met geavanceerde dry fogging. De microscopische nevel behandelt lucht, oppervlakken en moeilijk bereikbare plekken die gewone reiniging vaak mist.',
+    'We treat bathrooms, bedrooms, basements, crawlspaces, garages, rental properties, offices, hospitality venues and commercial buildings.':
+      'Wij behandelen badkamers, slaapkamers, kelders, kruipruimtes, garages, huurwoningen, kantoren, horeca en bedrijfspanden.',
+    'Unlike bleach-based cleaning, which may only lighten visible staining, FreshGuard treats both the contaminated surfaces and the wider indoor environment—delivering a deeper, more complete solution.':
+      'Anders dan reinigen met bleek, dat vlekken soms alleen lichter maakt, behandelt FreshGuard zowel de besmette oppervlakken als de bredere binnenomgeving—voor een diepere, completere oplossing.',
+    'Professional treatment. Cleaner air. Longer-lasting protection.':
+      'Professionele behandeling. Schonere lucht. Langer aanhoudende bescherming.',
 
     'Our Services': 'Onze diensten',
     'Five disciplines. One indoor standard.': 'Vijf disciplines. Eén binnenklimaatstandaard.',
@@ -67,8 +90,11 @@
     'Pick the service you need, or combine them. Every property is different — we start by understanding the cause.':
       'Kies de dienst die u nodig heeft, of combineer ze. Elk pand is anders — we beginnen bij de oorzaak.',
     'Leak Detection & Moisture Assessment': 'Lekdetectie & vochtinspectie',
-    'Moisture meters and infrared thermal imaging to find hidden moisture, cold bridges and leaks — including non-destructive detection with BA-MAH Totaaltechniek.':
-      'Vochtmeters en infrarood-thermografie om verborgen vocht, koudebruggen en lekkages te vinden — inclusief niet-destructieve detectie met BA-MAH Totaaltechniek.',
+    'Leak Detection': 'Lekdetectie',
+    '& Moisture': '& vocht',
+    'Assessment': 'inspectie',
+    'Using the latest technology of moisture meters and infrared thermal imaging to find hidden moisture, cold bridges and leaks':
+      'Met de nieuwste vochtmeters en infrarood-thermografie vinden we verborgen vocht, koudebruggen en lekkages',
     'Odor Control, Sanitization & Disinfection': 'Geurbestrijding, desinfectie & hygiëne',
     'Oxidation-based dry and wet fogging for odor control, disinfection and whole-space hygiene — air, surfaces and hard-to-reach areas.':
       'Dry- en wet-fogging op oxidatiebasis voor geurbestrijding, desinfectie en hygiëne van de hele ruimte — lucht, oppervlakken en moeilijk bereikbare plekken.',
@@ -91,6 +117,7 @@
     'Eco organic option': 'Eco-organische optie',
     'Pathogon': 'Pathogon',
     'MOULD AWAY': 'MOULD AWAY',
+    'Eco Organic Stage One': 'Eco Organic Stage One',
     'Eco Organic': 'Eco Organic',
     'Stage One': 'Stage One',
     'Mould Treatment': 'Schimmelbehandeling',
@@ -98,10 +125,6 @@
     'Customers can choose 100% organic and professional products. Where suitable, FreshGuard offers Pathogon MOULD AWAY Eco Organic as a ready-to-use stage-one treatment option.':
       'Klanten kunnen kiezen voor 100% organische en professionele producten. Waar geschikt biedt FreshGuard Pathogon MOULD AWAY Eco Organic als kant-en-klare stage-one behandeling.',
     'Ask about organic treatment': 'Vraag naar organische behandeling',
-    'Independent experts we bring in when your property needs specialised diagnostics or regulated biocidal support.':
-      'Onafhankelijke specialisten die we inschakelen wanneer uw pand gespecialiseerde diagnostiek of gereguleerde biocide-ondersteuning nodig heeft.',
-    'Leak detection': 'Lekdetectie',
-    'Biocidal partners': 'Biocide-partners',
 
     'Across Europe': 'Door heel Europa',
     'Smart protection. Built for the long term.': 'Slimme bescherming. Gebouwd voor de lange termijn.',
@@ -121,18 +144,48 @@
       'FreshGuard levert maatwerk voor vocht- en binnenmilieusanering, afgestemd op uw situatie. Elk pand is anders, daarom beginnen we met een zorgvuldige intake en inspectie om de oorzaken van schimmel, vochtproblemen en aanhoudende geuren te begrijpen, vóór we de meest effectieve behandeling adviseren.',
     'Where appropriate, FreshGuard carries out professional on-site inspections using a professional-grade moisture meter and infrared thermal imaging camera. These tools detect hidden moisture, cold bridges and problem areas behind walls, floors and ceilings.':
       'Waar nodig voert FreshGuard professionele inspecties ter plaatse uit met een professionele vochtmeter en infraroodcamera. Deze tools detecteren verborgen vocht, koudebruggen en probleemzones achter wanden, vloeren en plafonds.',
-    'When leak detection expertise is required, we work in close partnership with':
-      'Als lekdetectie nodig is, werken we nauw samen met',
-    ', specialists in non-destructive leak detection, ensuring fast and accurate identification of both visible and hidden leaks without unnecessary damage.':
-      ', specialisten in niet-destructieve lekdetectie, voor snelle en nauwkeurige identificatie van zichtbare én verborgen lekkages zonder onnodige schade.',
-
-    'Our Trusted Partners': 'Onze vertrouwde partners',
-    'Specialists we work with': 'Specialisten met wie we samenwerken',
-    'Non-destructive leak detection for houses, apartments, commercial properties and new-builds — thermography, acoustic detection, smoke testing, endoscopy and UV dye tracing.':
-      'Niet-destructieve lekdetectie voor huizen, appartementen, bedrijfspanden en nieuwbouw — thermografie, akoestische detectie, rookproeven, endoscopie en UV-kleurstoftesten.',
-    'Professional biocidal partners': 'Professionele biocidale partners',
-    'Trusted partners for professional mold removal and dry fogging. FreshGuard uses products listed under Article 95 of the ECHA list, compliant with the EU Biocidal Products Regulation.':
-      'Vertrouwde partners voor professionele schimmelverwijdering en dry fogging. FreshGuard gebruikt producten op de ECHA-lijst onder artikel 95, in overeenstemming met de EU-verordening biociden.',
+    'Our Work': 'Ons werk',
+    'Real projects.': 'Echte projecten.',
+    'Clear results.': 'Duidelijke resultaten.',
+    'Before & after.': 'Voor & na.',
+    'Drag the handle to compare the full before and after.':
+      'Sleep de hendel om volledig vóór en na te vergelijken.',
+    'Scroll each project to compare the full before and after — then swipe the carousel for more.':
+      'Scroll per project om volledig vóór en na te vergelijken — veeg daarna door het carrousel voor meer.',
+    'Mold Remediation': 'Schimmelsanering',
+    'Cleaner air.': 'Schonere lucht.',
+    'A healthier': 'Een gezondere',
+    'indoor environment.': 'binnenomgeving.',
+    'FreshGuard treats visible mold at its source while helping address contamination caused by excess moisture and condensation. Choose from professional-strength biocidal treatments or 100% organic alternatives, supported by whole-space hygiene treatment for air, surfaces and hard-to-reach areas.':
+      'FreshGuard behandelt zichtbare schimmel bij de bron en helpt besmetting door vocht en condensatie aan te pakken. Kies professionele biocide-behandelingen of 100% organische alternatieven, ondersteund door hygiënebehandeling van de hele ruimte voor lucht, oppervlakken en moeilijk bereikbare plekken.',
+    'Helps treat mold caused by moisture and condensation': 'Helpt schimmel door vocht en condensatie te behandelen',
+    '100% organic or professional biocidal treatments': '100% organisch of professionele biocide-behandelingen',
+    'Whole-space hygiene for air, surfaces and hidden areas': 'Hygiëne van de hele ruimte voor lucht, oppervlakken en verborgen zones',
+    'Find the cause.': 'Vind de oorzaak.',
+    'Then treat': 'Behandel daarna',
+    'the space.': 'de ruimte.',
+    'Professional on-site inspections with moisture meters and infrared thermal imaging detect hidden moisture, cold bridges and problem areas — so treatment targets the real source, not just the symptoms.':
+      'Professionele inspecties ter plaatse met vochtmeters en infrarood-thermografie detecteren verborgen vocht, koudebruggen en probleemzones — zodat behandeling de echte bron aanpakt, niet alleen de symptomen.',
+    'Infrared thermal imaging & moisture meters': 'Infrarood-thermografie & vochtmeters',
+    'Hidden leaks and cold bridges identified': 'Verborgen lekkages en koudebruggen opgespoord',
+    'Treatment plans tailored to your property': 'Behandelplannen afgestemd op uw pand',
+    'Previous project': 'Vorig project',
+    'Next project': 'Volgend project',
+    'Moisture Assessment': 'Vochtinspectie',
+    'Warmer floors.': 'Warmere vloeren.',
+    'A drier,': 'Een droger,',
+    'healthier home.': 'gezonder huis.',
+    'Compare crawlspace before and after': 'Vergelijk kruipruimte voor en na',
+    'Compare moisture damage before and after': 'Vergelijk vochtschade voor en na',
+    'Mold remediation before and after': 'Schimmelsanering voor en na',
+    'Crawlspace insulation before and after': 'Kruipruimte-isolatie voor en na',
+    'Moisture remediation before and after': 'Vochtbehandeling voor en na',
+    'Window corner with mold before remediation': 'Raamhoek met schimmel vóór sanering',
+    'Window corner clean after mold remediation': 'Raamhoek schoon na schimmelsanering',
+    'Moisture-damaged wall before treatment': 'Muur met vochtschade vóór behandeling',
+    'Wall after moisture remediation': 'Muur na vochtbehandeling',
+    'Water-damaged wall before treatment': 'Muur met waterschade vóór behandeling',
+    'Wall restored after moisture treatment': 'Muur hersteld na vochtbehandeling',
 
     'Get in touch': 'Neem contact op',
     'Ready for a Fresh Start?': 'Klaar voor een frisse start?',
@@ -206,6 +259,8 @@
     'FreshGuard specialist': 'FreshGuard-specialist',
     'Thermal camera revealing a hidden leak and water-stained wall':
       'Warmtebeeldcamera toont een verborgen lekkage en een watervlek op de muur',
+    'Specialist using FLIR thermal camera for moisture assessment':
+      'Specialist met FLIR-warmtebeeldcamera voor vochtinspectie',
     'Sanitizing fog treatment in a grimy bathroom':
       'Desinfecterende foggingbehandeling in een vervuilde badkamer',
     'Visible mold growth on a bathroom wall and ceiling':
