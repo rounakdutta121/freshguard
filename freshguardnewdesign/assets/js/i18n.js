@@ -20,8 +20,7 @@
     'FreshGuard · Specialists': 'FreshGuard · Specialisten',
     'Your': 'Jouw',
     'Space,': 'ruimte,',
-    'Our': 'Onze',
-    'Priority.': 'prioriteit.',
+    'Our Priority.': 'Onze prioriteit.',
     'Accredited Advanced Mold Remediation & Moisture Specialists. Welcome to FreshGuard — expert mold removal, indoor air protection and professional biocidal sanitization.':
       'Erkende specialisten in geavanceerde schimmelsanering en vochtbestrijding. Welkom bij FreshGuard — expert in schimmelverwijdering, bescherming van binnenlucht en professionele biocide desinfectie.',
     'Mold remediation': 'Schimmelsanering',
@@ -40,9 +39,6 @@
     'Certified & Qualified': 'Gecertificeerd & gekwalificeerd',
     'Specialists.': 'Specialisten.',
     'Proven Protection.': 'Bewezen bescherming.',
-    'Space,': 'ruimte,',
-    'Our': 'Onze',
-    'Priority.': 'prioriteit.',
 
     'Qualified specialists. Proven protection.': 'Gekwalificeerde specialisten. Bewezen bescherming.',
     'Professional mould and moisture solutions—with confidence built in.':
