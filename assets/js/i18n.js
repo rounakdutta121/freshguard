@@ -167,6 +167,19 @@
     'Treatment plans tailored to your property': 'Behandelplannen afgestemd op uw pand',
     'Previous project': 'Vorig project',
     'Next project': 'Volgend project',
+    'How we fixed it': 'Hoe wij het hebben opgelost',
+    'AC filter deep clean': 'Dieptereiniging van AC-filters',
+    'Heavily soiled filters were restricting airflow and circulating dust through the system. FreshGuard cleaned the filters and housing so the unit runs clearer again—improving hygiene and indoor air quality.':
+      'Zwaar vervuilde filters belemmerden de luchtstroom en verspreidden stof door het systeem. FreshGuard reinigde de filters en behuizing zodat het apparaat weer schoner draait—met betere hygiëne en luchtkwaliteit.',
+    'Crawlspace corner restored': 'Kruipruimtehoek hersteld',
+    'Dirt, mold residue and debris had built up around the pipe and concrete. Surfaces were cleaned and treated so the corner is dry, clear and ready for lasting moisture protection.':
+      'Vuil, schimmelresten en afval hadden zich opgehoopt rond de leiding en het beton. Oppervlakken zijn gereinigd en behandeld, zodat de hoek droog, schoon en klaar is voor duurzame vochtbescherming.',
+    'Hallway mold remediation': 'Schimmelsanering in de gang',
+    'Visible mold had spread across hallway finishes. Contaminated surfaces and the surrounding indoor environment were treated to remove growth and help reduce the chance of quick return.':
+      'Zichtbare schimmel had zich over de afwerking in de gang verspreid. Besmette oppervlakken en de omliggende binnenruimte zijn behandeld om groei te verwijderen en snelle terugkeer te helpen beperken.',
+    'Utility tunnel hygiene treatment': 'Hygiënebehandeling van de leidingschacht',
+    'Persistent mold and organic buildup in the enclosed service tunnel were cleaned and treated. The space is sanitary again and safer for ongoing access and maintenance.':
+      'Aanhoudende schimmel en organische aanslag in de gesloten leidingschacht zijn gereinigd en behandeld. De ruimte is weer hygiënisch en veiliger voor toegang en onderhoud.',
     'Moisture Assessment': 'Vochtinspectie',
     'Warmer floors.': 'Warmere vloeren.',
     'A drier,': 'Een droger,',

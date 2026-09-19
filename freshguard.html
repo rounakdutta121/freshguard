@@ -268,7 +268,12 @@
     .service-body h3 .line,
     .our-work .section-head h2 .line,
     .welcome-lead .line { display: block; }
-    .welcome-tag { color: var(--aqua-strong); }
+    .about-copy .welcome-tag,
+    .about-copy .welcome-tag strong,
+    .about-copy .welcome-foot,
+    .about-copy .welcome-foot strong {
+      color: var(--aqua-strong);
+    }
     .welcome-foot {
       margin-top: 8px;
       padding-top: 16px;
@@ -906,6 +911,33 @@
       inset: auto;
       height: min(62vh, 560px);
       min-height: 320px;
+    }
+    .work-card {
+      padding: 22px 24px 24px;
+      background: #fff;
+      border-top: 1px solid rgba(143,198,64,.35);
+    }
+    .work-card .work-label {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--aqua-strong);
+      margin-bottom: 8px;
+    }
+    .work-card h3 {
+      font-size: clamp(20px, 2.4vw, 26px);
+      margin: 0 0 10px;
+      color: var(--ink);
+      max-width: 28ch;
+    }
+    .work-card p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--muted);
+      max-width: 62ch;
     }
     .work-dots {
       display: flex;
@@ -1618,6 +1650,9 @@
       .art-grid { grid-template-columns: 1fr; }
       .work-slide { flex: 0 0 100%; width: 100%; max-width: 100%; }
       .work-slide .ba-slider { min-height: 280px; height: min(58vh, 480px); }
+      .work-card { padding: 18px 16px 20px; text-align: center; }
+      .work-card h3 { margin-left: auto; margin-right: auto; }
+      .work-card p { margin-left: auto; margin-right: auto; }
 
       .service img { height: 240px; }
       .about-media { max-height: 280px; aspect-ratio: 4 / 3; }
@@ -1989,6 +2024,11 @@
               <span class="ba-label ba-label-before">Before</span>
               <span class="ba-label ba-label-after">After</span>
             </div>
+            <div class="work-card">
+              <div class="work-label">How we fixed it</div>
+              <h3>AC filter deep clean</h3>
+              <p>Heavily soiled filters were restricting airflow and circulating dust through the system. FreshGuard cleaned the filters and housing so the unit runs clearer again—improving hygiene and indoor air quality.</p>
+            </div>
           </article>
           <article class="work-slide fx" style="--d:1">
             <div class="ba-slider" style="--pos: 50%;" role="slider" aria-label="Crawlspace cleaning before and after" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">
@@ -1999,6 +2039,11 @@
               <div class="ba-handle" style="left: var(--pos);"></div>
               <span class="ba-label ba-label-before">Before</span>
               <span class="ba-label ba-label-after">After</span>
+            </div>
+            <div class="work-card">
+              <div class="work-label">How we fixed it</div>
+              <h3>Crawlspace corner restored</h3>
+              <p>Dirt, mold residue and debris had built up around the pipe and concrete. Surfaces were cleaned and treated so the corner is dry, clear and ready for lasting moisture protection.</p>
             </div>
           </article>
           <article class="work-slide fx" style="--d:2">
@@ -2011,6 +2056,11 @@
               <span class="ba-label ba-label-before">Before</span>
               <span class="ba-label ba-label-after">After</span>
             </div>
+            <div class="work-card">
+              <div class="work-label">How we fixed it</div>
+              <h3>Hallway mold remediation</h3>
+              <p>Visible mold had spread across hallway finishes. Contaminated surfaces and the surrounding indoor environment were treated to remove growth and help reduce the chance of quick return.</p>
+            </div>
           </article>
           <article class="work-slide fx" style="--d:3">
             <div class="ba-slider" style="--pos: 50%;" role="slider" aria-label="Utility tunnel cleaning before and after" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">
@@ -2021,6 +2071,11 @@
               <div class="ba-handle" style="left: var(--pos);"></div>
               <span class="ba-label ba-label-before">Before</span>
               <span class="ba-label ba-label-after">After</span>
+            </div>
+            <div class="work-card">
+              <div class="work-label">How we fixed it</div>
+              <h3>Utility tunnel hygiene treatment</h3>
+              <p>Persistent mold and organic buildup in the enclosed service tunnel were cleaned and treated. The space is sanitary again and safer for ongoing access and maintenance.</p>
             </div>
           </article>
         </div>
