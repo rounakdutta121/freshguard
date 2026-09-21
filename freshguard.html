@@ -551,9 +551,9 @@
 
     /* CRAWLSPACE */
     .crawlspace {
-      background: var(--fog);
+      background: #fff;
       scroll-margin-top: calc(var(--nav) + 12px);
-      padding: 0;
+      padding: clamp(28px, 4vw, 48px) 0;
       overflow: hidden;
     }
     .crawl-grid {
@@ -566,13 +566,19 @@
       border: 0;
       border-radius: 0;
       box-shadow: none;
-      overflow: hidden;
+      overflow: visible;
     }
     .crawl-media {
       position: relative;
       min-height: 420px;
+      height: auto;
+      align-self: stretch;
+      margin: clamp(24px, 3.5vw, 40px) 0 clamp(24px, 3.5vw, 40px) clamp(20px, 3vw, 36px);
       background: var(--deep);
-      height: 100%;
+      border: 2px solid var(--aqua);
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 16px 40px rgba(2, 22, 25, 0.1);
     }
     .ba-slider {
       position: absolute;
@@ -583,7 +589,8 @@
       user-select: none;
       -webkit-user-select: none;
     }
-    .ba-slider img {
+    .ba-slider > img.ba-before,
+    .ba-slider > .ba-before {
       position: absolute;
       inset: 0;
       width: 100%;
@@ -606,11 +613,15 @@
       position: absolute;
       left: 0;
       top: 0;
+      right: auto;
+      bottom: auto;
       width: 100%;
       height: 100%;
       max-width: none;
       object-fit: cover;
       object-position: center;
+      display: block;
+      pointer-events: none;
     }
     .ba-handle {
       position: absolute;
@@ -1597,7 +1608,11 @@
       .accredit-badge { width: 96px; height: 96px; padding: 12px; }
       .trust-bar div { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.12); justify-content: flex-start; }
       .trust-bar div:last-child { border-bottom: 0; }
-      .crawl-media { min-height: 280px; }
+      .crawl-media {
+        min-height: 280px;
+        margin: 20px var(--pad) 8px;
+        border-radius: 22px;
+      }
       .crawl-copy { padding: 28px var(--pad) 36px; }
       .crawl-grid { min-height: 0; }
       .nav-right .btn { min-height: 44px; font-size: 13px; padding: 0 16px; }
@@ -2290,8 +2305,12 @@
             if (!afterImg) return;
             var w = slider.clientWidth;
             var h = slider.clientHeight;
+            if (w < 2 || h < 2) return;
             afterImg.style.width = w + 'px';
             afterImg.style.height = h + 'px';
+            afterImg.style.maxWidth = 'none';
+            afterImg.style.right = 'auto';
+            afterImg.style.bottom = 'auto';
           }
 
           function setPos(clientX) {
@@ -2306,7 +2325,15 @@
           }
 
           syncAfterSize();
+          requestAnimationFrame(syncAfterSize);
           window.addEventListener('resize', syncAfterSize);
+          if (afterImg && !afterImg.complete) {
+            afterImg.addEventListener('load', syncAfterSize);
+          }
+          if (typeof ResizeObserver !== 'undefined') {
+            var ro = new ResizeObserver(syncAfterSize);
+            ro.observe(slider);
+          }
 
           slider.addEventListener('pointerdown', function (e) {
             dragging = true;

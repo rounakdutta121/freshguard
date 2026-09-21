@@ -32,10 +32,10 @@
     'for Persistent Smells': 'bij Hardnekkige Geuren',
     'Hardnekkige Geuren Professioneel Laten Verwijderen':
       'Hardnekkige Geuren Professioneel Laten Verwijderen',
-    'A lingering smell can make a room difficult to use, let or welcome people into. If routine cleaning has not resolved the problem, speak to FreshGuard about professional odour treatment for your property in the Netherlands.':
-      'Een aanhoudende geur kan het gebruik of de verhuur van een ruimte lastig maken. Blijft de geur aanwezig na een gewone schoonmaak? Bespreek met FreshGuard de mogelijkheden voor professionele geurbestrijding in uw woning of pand in Nederland.',
-    'Describe the smell, the affected rooms and any known cause. We can discuss an appropriate assessment and whether odour treatment, disinfection or another service is relevant.':
-      'Omschrijf de geur, de betreffende ruimtes en de oorzaak als u die kent. We bespreken welke beoordeling passend is en of geurbehandeling, desinfectie of een andere aanpak aansluit op uw situatie.',
+    'A persistent odour can make a home uncomfortable for family and guests. Everyday cleaning often does not fix the underlying cause, whether it is in a crawlspace, basement, bathroom or living area.':
+      'Een aanhoudende geur kan een woning onaangenaam maken voor huisgenoten en gasten. Dagelijkse schoonmaak lost de onderliggende oorzaak vaak niet op — of die nu in de kruipruimte, kelder, badkamer of woonruimte zit.',
+    'FreshGuard assesses and treats odours for your property. Tell us what it smells like, where it is strongest and any known cause — we will recommend odour treatment, disinfection or further investigation.':
+      'FreshGuard beoordeelt en behandelt geuren voor uw pand. Vertel hoe de geur ruikt, waar die het sterkst is en de eventuele oorzaak — wij adviseren geurbehandeling, desinfectie of verder onderzoek.',
     'Request an Odour Treatment Quote': 'Vraag een offerte aan',
     'Treatment suited to the property • Preparation discussed in advance • Options for homes and businesses':
       'Aanpak afgestemd op het pand • Voorbereiding vooraf besproken • Voor particulieren en bedrijven',
