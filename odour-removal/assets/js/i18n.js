@@ -111,6 +111,25 @@
     'When you contact FreshGuard, include your postcode, property type and a short description of the smell. That information helps us discuss suitability, preparation and a quotation that matches your situation.':
       'Vermeld bij contact met FreshGuard uw postcode, het type pand en een korte omschrijving van de geur. Met die informatie kunnen we geschiktheid, voorbereiding en een passende offerte bespreken.',
 
+    'Google reviews': 'Google-reviews',
+    'What Our Clients Say': 'Wat Onze Klanten Zeggen',
+    'Rated on Google': 'Beoordeeld op Google',
+    'Read all reviews on Google': 'Lees alle reviews op Google',
+    'Read more': 'Lees meer',
+    'Read less': 'Lees minder',
+    'Posted on Google · 7 months ago': 'Geplaatst op Google · 7 maanden geleden',
+    'Posted on Google · 10 months ago': 'Geplaatst op Google · 10 maanden geleden',
+    'They helped us with rising damp damage in our kitchen and we are happily mould free. Clear communication from start to finish and a result we could see and feel in the home.':
+      'Ze hielpen ons met schade door optrekkend vocht in de keuken en we zijn blij schimmelvrij. Duidelijke communicatie van begin tot eind en een resultaat dat we in huis merkten.',
+    'The entire process from initial contact to the follow up after remediation was handled professionally. Nick, Diederick and Per were clear, careful and thorough — exactly what you want when you are dealing with a moisture problem at home.':
+      'Het hele traject van eerste contact tot de nazorg na sanering werd professioneel aangepakt. Nick, Diederick en Per waren duidelijk, zorgvuldig en grondig — precies wat je wilt bij een vochtprobleem thuis.',
+    'We booked FreshGuard to look at suspected mould. They explained the process clearly, arrived on time and completed the work quickly. Very professional and reassuring throughout.':
+      'We boekten FreshGuard voor vermoedelijke schimmel. Ze legden het proces helder uit, kwamen op tijd en werkten snel. Zeer professioneel en geruststellend.',
+    'We found mold in our attic and FreshGuard handled it properly, including fogging the room to kill any mold spores. The team was careful with the property and explained every step.':
+      'We vonden schimmel op zolder en FreshGuard pakte het goed aan, inclusief fogging van de ruimte om sporen te doden. Het team was voorzichtig met het pand en legde elke stap uit.',
+    'Scheduling an appointment was easy. Per prepped the area carefully and did a thorough job removing the problem. We would recommend FreshGuard to anyone needing specialist help.':
+      'Een afspraak plannen was eenvoudig. Per bereidde het gebied zorgvuldig voor en deed grondig werk. We raden FreshGuard aan voor specialistische hulp.',
+
     'Frequently asked questions': 'Veelgestelde vragen',
     'Questions About Odour Removal and Disinfection': 'Veelgestelde Vragen over Geurbestrijding en Desinfectie',
     'Questions About Odour Removal': 'Veelgestelde Vragen over Geurbestrijding',
@@ -267,6 +286,8 @@
     applyAttr(node, 'aria-label', lang);
     applyAttr(node, 'placeholder', lang);
     applyAttr(node, 'title', lang);
+    applyAttr(node, 'data-more', lang);
+    applyAttr(node, 'data-less', lang);
 
     var kids = node.childNodes;
     for (var i = 0; i < kids.length; i++) walk(kids[i], lang);
