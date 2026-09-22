@@ -43,12 +43,18 @@
     'Qualified specialists. Proven protection.': 'Gekwalificeerde specialisten. Bewezen bescherming.',
     'Professional mould and moisture solutions—with confidence built in.':
       'Professionele schimmel- en vochtoplossingen—met ingebouwd vertrouwen.',
-    'bacteria, viruses and fungi killed with advanced treatment':
-      'bacteriën, virussen en schimmels gedood met geavanceerde behandeling',
-    'structured remediation process built to prevent regrowth':
-      'gestructureerd saneringsproces ontworpen om hergroei te voorkomen',
-    'Netherlands, France, Portugal — recommended by homeowners':
-      'Nederland, Frankrijk, Portugal — aanbevolen door huiseigenaren',
+    'Professional-Grade': 'Professioneel niveau',
+    'Advanced treatment targeting mould, bacteria and airborne spores.':
+      'Geavanceerde behandeling gericht op schimmel, bacteriën en sporen in de lucht.',
+    'Two-Stage Treatment': 'Tweefasenbehandeling',
+    'Surface remediation and dry fogging for deeper, more complete protection.':
+      'Oppervlaktesanering en dry fogging voor diepere, completere bescherming.',
+    'Serving 3 Countries': 'Actief in 3 landen',
+    'Trusted by homeowners and businesses across the Netherlands, France and Portugal.':
+      'Vertrouwd door huiseigenaren en bedrijven in Nederland, Frankrijk en Portugal.',
+    'Professional Treatments': 'Professionele behandelingen',
+    'Root-Cause Focused': 'Gericht op de oorzaak',
+    'Homes & Businesses': 'Woningen & bedrijven',
     'Professional-grade treatments': 'Professionele behandelingen',
     'Root-cause focused': 'Gericht op de oorzaak',
     'Residential & commercial': 'Particulier & zakelijk',
@@ -121,6 +127,19 @@
     'Customers can choose 100% organic and professional products. Where suitable, FreshGuard offers Pathogon MOULD AWAY Eco Organic as a ready-to-use stage-one treatment option.':
       'Klanten kunnen kiezen voor 100% organische en professionele producten. Waar geschikt biedt FreshGuard Pathogon MOULD AWAY Eco Organic als kant-en-klare stage-one behandeling.',
     'Ask about organic treatment': 'Vraag naar organische behandeling',
+
+    'Trusted specialist partners': 'Betrouwbare specialistische partners',
+    'Repair and full restoration': 'Reparatie en volledig herstel',
+    'When the inspection reveals wider building work, FreshGuard can coordinate trusted specialists through to the final finish.':
+      'Wanneer de inspectie breder bouwwerk nodig maakt, kan FreshGuard betrouwbare specialisten coördineren tot en met de afwerking.',
+    'Leak repairs and waterproofing': 'Lekreparaties en waterdichting',
+    'Basement and terrace waterproofing': 'Kelder- en terraswaterdichting',
+    'Damaged plaster and surface restoration': 'Herstel van beschadigd stucwerk en oppervlakken',
+    'Floor beam repair': 'Herstel van vloerbalken',
+    'Concrete repairs': 'Betonherstel',
+    'Painting and final finishing': 'Schilderwerk en eindafwerking',
+    'One point of contact for a dry, protected and fully restored property.':
+      'Eén aanspreekpunt voor een droog, beschermd en volledig hersteld pand.',
 
     'Across Europe': 'Door heel Europa',
     'Smart protection. Built for the long term.': 'Slimme bescherming. Gebouwd voor de lange termijn.',
